@@ -28,13 +28,13 @@ gulp.task('dist-js', function () {
 gulp.task('watch', function (cb) {
   gulp.watch('content/sass/**/*.sass', ['dist-sass'])
   gulp.watch('content/js/**/*.js', ['dist-js'])
-  gulp.watch('public/*.html').on('change', browserSync.reload)
+  gulp.watch('*.html').on('change', browserSync.reload)
 })
 
 gulp.task('browser-sync', function(cb) {
   browserSync.init({
     server: {
-      baseDir: './public'
+      baseDir: './'
     }
   })
 })

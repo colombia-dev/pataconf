@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("./../fonts/icomoon/icomoon.eot?pg6ufj");
-  src: url("./../fonts/icomoon/icomoon.eot?#iefixpg6ufj") format("embedded-opentype"),
-  url("./../fonts/icomoon/icomoon.ttf?pg6ufj") format("truetype"),
-  url("./../fonts/icomoon/icomoon.woff?pg6ufj") format("woff"),
-  url("./../fonts/icomoon/icomoon.svg?pg6ufj#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?pg6ufj");
+  src: url("../fonts/icomoon/icomoon.eot?#iefixpg6ufj") format("embedded-opentype"),
+  url("../fonts/icomoon/icomoon.ttf?pg6ufj") format("truetype"),
+  url("../fonts/icomoon/icomoon.woff?pg6ufj") format("woff"),
+  url("../fonts/icomoon/icomoon.svg?pg6ufj#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -339,8 +339,7 @@ html, body {
 
 .logo {
   background: url("./../img/pataconf.png") center top no-repeat;
-  height: 350px;
-}
+  height: 350px; }
   @media (max-width: 650px) {
     .logo {
       margin-bottom: 3rem; } }

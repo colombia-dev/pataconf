@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
@@ -26,50 +26,51 @@
     <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="container-header">
-        <header class="main-header">
-          <h1 class="logo">Pataconf Colombia</h1>
-          <div class="wrapper-info-header">
-            <p class="main-header__description">El festival de programación donde las comunidades son bienvenidas a dar una charla.</p>
-            <div class="container-info">
-              <p class="container-info__info">
-                <span class="container-info__info__date"> Jueves, 06 de octubre 9am - 6pm</span>
-                <span class="container-info__info__ruta-n">Ruta N</span>
-                <span class="container-info__info__place">Medellín, Colombia</span>
-              </p>
-              <a target="_blank" href="https://ti.to/colombia-dev/pataconf" class="container-info__button">
-              <span>Reclama tu entrada gratis</span>
-              </a>
-            </div>
-          </div>
-        </header>
-      </div>
-      <div class="container-devfest-content">
-        <div id="agenda" class="agenda">
-          <h2>Llamado a Conferencistas</h2>
-          <p>Desde la comunidad de Colombia Dev queremos hacer de PataConf un evento interesante,
-            informativo y revolucionario para aquellos que atiendan; por esta razón
-            los invitamos a que nos envíen sus propuestas de charlas.</p>
-          <h3>Haz click aqui para
-            <a href="https://github.com/colombia-dev/cfp-pataconf">postular tu charla</a>
-          </h3>
+    <div class="header">
+      
+      <div class="header__up">
+        <div class="header__up__content-info">
+          <p class="header__up__content-info__date">Jueves, 06 de octubre 9am - 6pm</p>
+          <span class="header__up__content-info__venue">Ruta N</span>
+          <span class="header__up__content-info__place">Medellín, Colombia</span>
         </div>
+        <a target="_blank" href="https://ti.to/colombia-dev/pataconf" class="header__up__ticket-free">Reclama tu entrada gratis</a>
       </div>
-      <div class="about-col-dev">
-        <img class="about-col-dev-logo" src="img/coldev.png" alt="Colombia.Dev">
-        <p>Este evento es una iniciativa de <br> Colombia.dev</p>
+      
+      <div class="header__main">
+        <h1 class="header__main__logo">Pataconf Colombia</h1>
+        <p class="header__main__description">El festival de programación donde las comunidades son bienvenidas a dar una charla.</p>
       </div>
-      <footer class="footer">
-        <div class="container-elements-footer">
-          <p class="footer__support">PataConf - con el apoyo de  <img src="img/rutaNlogo.png" class="rutan-logo" />
-          </p>
-          <p class="footer__follow-us">Síguenos en <a href="https://twitter.com/colombia_dev" target="_blank"><span>@colombia_dev</span></a>
-          </p>
-        </div>
-        <p class="footer__smaller">Adoptamos el <a href="https://github.com/colombia-dev/codigo-de-conducta" target="_blank">Código de Conducta de Colombia.Dev</a></p>
-      </footer>
+
     </div>
+    
+    <div class="cfp">
+      <h1 class="cfp__title">Llamado a Conferencistas</h1>
+      <div class="cfp__container">
+        <img src="img/pataconf.png" alt="Pataconf" class="cfp__container__logo">
+        <div class="cfp__container__info">
+          <p class="cfp__container__info__description">Desde la comunidad <a href="http://colombia-dev.org" target="_blank">colombia-dev</a> queremos hacer de <strong>PataConf</strong> un evento interesante, informativo y revolucionario para aquellos que atiendan; por esta razón los invitamos a que nos envíen sus propuestas de charlas.</p>
+          <a target="_blank" href="https://github.com/colombia-dev/cfp-pataconf" class="cfp__container__info__button">Postular mi charla</a>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="footer__colombia-dev">
+        <p class="footer__colombia-dev__text">Este evento es una iniciativa de</p>
+        <img class="footer__colombia-dev__logo" src="img/coldev.png" alt="Colombia.Dev" />
+        <div class="footer__colombia-dev__ruta-n">
+          <p class="footer__colombia-dev__ruta-n__text">Con el apoyo de</p>
+          <img src="img/rutaNlogo.png" alt="RutaN" class="footer__colombia-dev__ruta-n__logo" />
+        </div>
+      </div>
+      
+      <div class="footer__cod">Adoptamos el <a class="footer__cod__link" target="_blank" href="https://github.com/colombia-dev/codigo-de-conducta">código de conducta de Colombia.dev</a></div>
+
+      <p class="footer__follow-us">Síguenos en <a class="footer__follow-us__link" href="https://twitter.com/colombia_dev" target="_blank">@colombia_dev</a>
+      </p>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.js?2"></script>
   </body>

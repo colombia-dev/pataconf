@@ -9,7 +9,7 @@ app.set('view engine', 'html');
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/', function (req, res) {
-	res.render('proposal');
+	res.render('index');
 });
 
 app.listen(process.env.PORT || 3000, function () {

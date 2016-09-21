@@ -3,7 +3,8 @@
   color: $color-black
   padding: .5rem
   display: flex
-  border-top: 3px solid $color-blue-strong
+  font-size: .8rem
+  border-top: 1px solid $color-blue-strong
   justify-content: space-between
   align-items: center
   &__colombia-dev
@@ -14,7 +15,10 @@
       margin: 0 0 .3rem
     &__logo
       width: 4rem
+      padding-bottom: .5rem
+      border-bottom: 1px solid $color-orange
     &__ruta-n
+      padding-top: .5rem
       display: flex
       justify-content: center
       align-items: center
@@ -25,7 +29,7 @@
     &__link
       color: inherit
       &:hover
-        color: white
+        color: $color-white
   &__follow-us
     display: flex
     justify-content: center
@@ -33,7 +37,7 @@
     &:before
       margin-right: .5rem
       font-size: 1.5rem
-      color: $color-white
+      color: $color-black
       content: '\e603'
       font-family: icomoon
     &__link
@@ -41,3 +45,81 @@
       margin-left: .6rem
       &:hover
         color: $color-white
+
+@media (min-width: 1400px)
+  .footer
+    padding: 1.8rem 1rem
+    font-size: 1.3rem
+
+@media (min-width: 2400px)
+  .footer
+    padding: 4rem 1.2rem
+    font-size: 2.1rem
+    &__colombia-dev
+      &__logo
+        width: 9rem
+      &__ruta-n
+        &__logo
+          width: 7rem
+    &__follow-us
+      &:before
+        font-size: 3.5rem
+@media (max-width: 900px)
+  .footer
+    &__colombia-dev
+      &__logo
+        width: 3rem
+      &__ruta-n
+        &__logo
+          width: 3.2rem
+    &__cod
+      text-align: center
+      flex-basis: 30%
+    &__follow-us
+      margin: 0
+      padding-right: 1rem
+      flex-direction: column
+      &:before
+        margin: 0 0 .2rem
+      &__link
+        margin: .2rem 0 0
+
+@media (max-width: 550px)
+  .footer
+    flex-direction: column
+    &__colombia-dev
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      &__text
+        margin-right: .5rem
+      &__logo
+        border-bottom: 0
+        margin-right: .5rem
+      &__ruta-n
+        padding: 0
+    &__cod
+      margin: 1.8rem 0 1rem
+    &__follow-us
+      flex-direction: row
+      &:before
+        padding-right: .5rem
+      &__link
+        margin-left: .5rem
+
+@media (max-width: 432px)
+  .footer
+    padding: 1rem 0
+    &__colombia-dev
+      width: 100%
+      &__text
+        flex-basis: 35%
+        text-align: center
+        margin: 0
+      &__logo
+        flex-basis: 15%
+        width: 3rem
+        margin: 0 .5rem
+        padding: 0
+      &__ruta-n
+        flex-basis: 50%

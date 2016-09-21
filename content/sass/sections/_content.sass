@@ -31,3 +31,68 @@
         background-color: $color-yellow
         padding: .6rem 1.8rem
         box-shadow: 1px 1px 5px #565656
+
+@media (min-width: 1400px)
+  .cfp
+    padding: 4rem 0
+    &__title
+      font-size: 3rem
+    &__container
+      &__info
+        &__description
+          font-size: 1.5rem
+        &__button
+          font-size: 1.6rem
+
+@media (min-width: 2400px)
+  .cfp
+    padding: 6rem 0 10rem
+    &__title
+      font-size: 5rem
+      border-bottom: 2px solid $color-blue-strong
+    &__container
+      &__logo
+        width: 25rem
+      &__info
+        &__description
+          font-size: 2.5rem
+        &__button
+          font-size: 3.5rem
+          box-shadow: 5px 5px 10px #888
+
+@media (max-width: 900px)
+  .cfp
+    width: 90%
+    &__container
+      &__logo
+        width: 10rem
+      &__info
+        &__description
+          font-size: .95rem
+          margin-bottom: 0
+        &__button
+          margin-top: .2rem
+
+@media (max-width: 550px)
+  .cfp
+    &__title
+      font-size: 1.8rem
+    &__container
+      height: 10rem
+      &__logo
+        width: 8rem
+      &__info
+        &__description
+          font-size: .85rem
+        &__button
+          margin-top: .5rem
+
+@media (max-width: 440px)
+  .cfp
+    padding: 2rem 0 3.5rem
+    &__title
+      margin: 0
+      font-size: 1.4rem
+    &__container
+      &__logo
+        display: none

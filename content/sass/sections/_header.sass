@@ -9,6 +9,7 @@ html, body
   display: flex
   flex-direction: column
   height: 100vh
+  justify-content: space-around
   &__up
     padding: 0rem 1rem 0
     display: flex
@@ -70,5 +71,111 @@ html, body
       margin: 1rem 0 0
     &__description
       font-size: 1.3rem
-      width: 45%
+      width: 50%
       text-align: center
+
+@media (min-width: 901px)
+  .header
+    &__main
+      &__logo
+        background-size: 70%
+        background-position: center 100%
+
+@media (min-width: 1400px)
+  .header
+    &__main
+      &__logo
+        font-size: 4rem
+        height: 450px
+        background-size: 70%
+        background-position: center -60%
+        margin: 0
+      &__description
+        font-size: 2rem
+        width: 80%
+
+@media (min-width: 2400px)
+  .header
+    &__up
+      &__content-info
+        &__date
+          font-size: 4rem
+        &__venue
+          font-size: 5rem
+        &__place
+          font-size: 3rem
+      &__ticket-free
+        font-size: 3rem
+        padding: 1rem 8rem 1rem 1rem
+        &:before
+          font-size: 3.5rem
+    &__main
+      &__logo
+        font-size: 5rem
+        height: 800px
+        background-size: 100%
+        background-position: center -100%
+      &__description
+        font-size: 3rem
+        width: 60%
+
+@media (max-width: 900px)
+  .header
+    flex-direction: column-reverse
+    &__main
+      flex-basis: 70%
+      justify-content: center
+      &__logo
+        background-size: 80%
+        background-position: center 100%
+      &__description
+        margin: 0
+        width: 80%
+        font-size: 1rem
+        margin-top: -2rem
+        padding-bottom: .5rem
+        border-bottom: 1px solid $color-white
+    &__up
+      flex-direction: column-reverse
+      flex-basis: 30%
+      justify-content: space-around
+      &__content-info
+        text-align: center
+        &__date
+          font-size: 1.1rem
+          margin: 0
+      &__ticket-free
+          font-size: 1.2rem
+          &:before
+            right: 1%
+            font-size: 1.8rem
+
+@media (max-width: 550px)
+  .header
+    &__main
+      &__logo
+        background-size: 65%
+        background-position: center 60%
+
+@media (max-width: 400px)
+  .header
+    &__main
+      &__logo
+        width: 300px
+        font-size: 1.8rem
+        text-align: center
+        letter-spacing: 1px
+        background-size: 100%
+        background-position: center bottom
+      &__description
+        font-size: 1.2rem
+        border-bottom: 0
+        width: 100%
+        padding: 0
+    &__up
+      &__ticket-free
+        font-size: .95rem
+        text-align: center
+        &:before
+          right: 1%
+          font-size: 1.5rem

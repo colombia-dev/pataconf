@@ -2,7 +2,7 @@ var express = require('express');
 var pug = require('pug');
 var app = express();
 
-app.set('views', `${__dirname}/content/views`);
+app.set('views', `${__dirname}`);
 app.engine('html', pug.renderFile);
 app.set('view engine', 'html');
 

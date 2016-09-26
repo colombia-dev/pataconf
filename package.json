@@ -1,25 +1,27 @@
 {
-  "name": "dev-fest",
+  "name": "Pataconf",
   "version": "0.0.1",
-  "description": "Landing Devfest",
+  "description": "El festival de programación donde las comunidades son bienvenidas a dar una charla",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "gulp dist"
   },
-  "author": "Monoku",
+  "author": "colombia-dev <hola@colombia-dev.org>",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.8.2",
     "express": "^4.13.3",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-sass": "^2.0.4",
-    "gulp-concat": "^2.6.0",
-    "gulp-uglify": "^1.4.2"
+    "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-refresh": "^1.1.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.2"
   },
   "engines": {
     "node": "0.12.7"

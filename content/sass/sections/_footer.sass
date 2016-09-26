@@ -1,105 +1,125 @@
 .footer
-  background-color: $color-black
-  margin: 0 auto
-  color: $color-blue-light
-
-  a
-    color: inherit
-    text-decoration: none
-
-    &:hover
-      color: white
-
-.container-elements-footer
-  padding: 0.5rem 0 0.3rem
+  background-color: $color-yellow
+  color: $color-black
+  padding: .5rem
   display: flex
-  align-items: baseline
-  letter-spacing: 1px
-  max-width: 980px
-  font-weight: bold
-  margin: auto
-
-  @media (max-width: 1200px)
-    padding: 0.5rem 7rem 0.3rem
-
-  @media (max-width: 1060px)
-    display: block
-    text-align: center
-    padding: 0.5rem 7rem 0.1rem
-
-  @media (max-width: 650px)
-    padding: 0.5rem 2rem 0.1rem
-
-  @media (max-width: 460px)
-    padding: 0.5rem 1rem 0.1rem
-
-
-.footer__support,
-.footer__follow-us
-  display: inline-block
-
-  @media (max-width: 1060px)
-    display: block
-
-.footer__support
-  line-height: 1.7
-  flex: 1
-
-.footer__follow-us
-  text-align: right
-  position: relative
-
-  @media (max-width: 1060px)
-    text-align: center
-
-  @media (max-width: 480px)
-    margin-top: 2.5rem
-
-
-  a
-    text-decoration: none
-
-    &:before
-      content: '\e603'
-      font-family: icomoon
-      color: white
-      top: 0.1rem
-      right: 13rem
-      margin: 0 0.3rem 0 0.6rem
-      text-decoration: none
-      display: inline-block
-
-.ride-logo,
-.rutan-logo
-  display: inline-block
-  margin-left: 0.4rem
-  margin-right: 0.4rem
-
-  &:before
-    content: "\e600"
-    font-family: icomoon
-    color: white
-    font-size: 1.5rem
-
-.rutan-logo
-  vertical-align: sub
-
-
-@media screen and (max-width: 770px)
-  .footer__text-all
+  font-size: .8rem
+  border-top: 1px solid $color-blue-strong
+  justify-content: space-between
+  align-items: center
+  &__colombia-dev
+    display: flex
     flex-direction: column
     align-items: center
-    text-align: center
+    &__text
+      margin: 0 0 .3rem
+    &__logo
+      width: 4rem
+      padding-bottom: .5rem
+      border-bottom: 1px solid $color-orange
+    &__ruta-n
+      padding-top: .5rem
+      display: flex
+      justify-content: center
+      align-items: center
+      &__text
+        margin: 0
+        margin-right: .5rem
+  &__cod
+    &__link
+      color: inherit
+      &:hover
+        color: $color-white
+  &__follow-us
+    display: flex
+    justify-content: center
+    align-items: center
+    &:before
+      margin-right: .5rem
+      font-size: 1.5rem
+      color: $color-black
+      content: '\e603'
+      font-family: icomoon
+    &__link
+      color: inherit
+      margin-left: .6rem
+      &:hover
+        color: $color-white
 
-  .footer__follow-us,
-  .footer__support
-    width: auto
+@media (min-width: 1400px)
+  .footer
+    padding: 1.8rem 1rem
+    font-size: 1.3rem
 
+@media (min-width: 2400px)
+  .footer
+    padding: 4rem 1.2rem
+    font-size: 2.1rem
+    &__colombia-dev
+      &__logo
+        width: 9rem
+      &__ruta-n
+        &__logo
+          width: 7rem
+    &__follow-us
+      &:before
+        font-size: 3.5rem
+@media (max-width: 900px)
+  .footer
+    &__colombia-dev
+      &__logo
+        width: 3rem
+      &__ruta-n
+        &__logo
+          width: 3.2rem
+    &__cod
+      text-align: center
+      flex-basis: 30%
+    &__follow-us
+      margin: 0
+      padding-right: 1rem
+      flex-direction: column
+      &:before
+        margin: 0 0 .2rem
+      &__link
+        margin: .2rem 0 0
 
-.footer__smaller
-  // font-size: 0.9em
-  // font-weight: 500
-  text-align: center
-  padding: 0rem 2rem 3rem
-  font-weight: bold
-  // color: rgba(255,255,255,0.6)
+@media (max-width: 550px)
+  .footer
+    flex-direction: column
+    &__colombia-dev
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      &__text
+        margin-right: .5rem
+      &__logo
+        border-bottom: 0
+        margin-right: .5rem
+      &__ruta-n
+        padding: 0
+    &__cod
+      margin: 1.8rem 0 1rem
+    &__follow-us
+      flex-direction: row
+      &:before
+        padding-right: .5rem
+      &__link
+        margin-left: .5rem
+
+@media (max-width: 432px)
+  .footer
+    padding: 1rem 0
+    &__colombia-dev
+      width: 100%
+      &__text
+        flex-basis: 35%
+        text-align: center
+        margin: 0
+      &__logo
+        flex-basis: 15%
+        width: 3rem
+        margin: 0 .5rem
+        padding: 0
+      &__ruta-n
+        flex-basis: 50%

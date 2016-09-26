@@ -4,8 +4,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
     uglify = require('gulp-uglify'),
-    livereload = require('gulp-refresh'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat')
 
 gulp.task('dist-sass', function(cb){
   return gulp.src('content/sass/**/*.sass')
@@ -16,7 +15,6 @@ gulp.task('dist-sass', function(cb){
   }))
   // .pipe(cssMin())
   .pipe(gulp.dest('./public/css/'))
-  .pipe(livereload())
   .pipe(browserSync.stream())
 })
 
@@ -25,11 +23,9 @@ gulp.task('dist-js', function () {
             .pipe(concat('main.js'))
             .pipe(uglify())
             .pipe(gulp.dest('public/js'))
-            .pipe(livereload())
 })
 
 gulp.task('watch', function (cb) {
-  livereload.listen()
   gulp.watch('content/sass/**/*.sass', ['dist-sass'])
   gulp.watch('content/js/**/*.js', ['dist-js'])
   gulp.watch('*.html').on('change', browserSync.reload)

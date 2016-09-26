@@ -1,6 +1,6 @@
 var express = require('express');
+var pug = require('pug');
 var app = express();
-<<<<<<< HEAD
 
 app.set('views', `${__dirname}`);
 app.engine('html', pug.renderFile);
@@ -15,8 +15,3 @@ app.get('/', function (req, res) {
 app.listen(process.env.PORT || 3000, function () {
 	console.log(`Server listening on port: ${process.env.PORT || 3000}`);
 });
-=======
-app.use(express.static(__dirname + '/public'));
-console.log('Listening on port: ' + process.env.PORT);
-app.listen(process.env.PORT || 3000);
->>>>>>> 61ebeb5aeb3061d5198f721c8268870bb5655c9e

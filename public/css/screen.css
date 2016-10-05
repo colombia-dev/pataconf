@@ -607,6 +607,38 @@ html, body {
     -moz-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
+    .cfp__container table {
+      min-width: 800px;
+      width: 99.9%;
+      margin-top: 10px; }
+    .cfp__container thead tr:nth-child(2) th {
+      padding-bottom: 1rem; }
+    .cfp__container thead tr:first-child th {
+      padding-top: 1rem; }
+    .cfp__container tr:first-child th:nth-child(3) {
+      background: #233D86; }
+    .cfp__container tr:nth-child(2) th:nth-child(4),
+    .cfp__container tr:nth-child(2) th:nth-child(5) {
+      background: #233D86; }
+    .cfp__container th {
+      background: #000000;
+      color: white;
+      padding: 0.5rem 0.6rem;
+      border: 1px solid #4B5369; }
+    .cfp__container td:first-child {
+      text-align: left; }
+    .cfp__container td {
+      width: 8%;
+      border: 1px solid #eee;
+      padding: 1.3rem 0.6rem;
+      vertical-align: top;
+      line-height: 1.4; }
+    .cfp__container td:nth-child(2n) {
+      width: 22.5%; }
+    .cfp__container tr:hover td {
+      background: #f8f8f8; }
+    .cfp__container tbody {
+      text-align: center; }
     .cfp__container__logo {
       width: 12rem; }
     .cfp__container__info {

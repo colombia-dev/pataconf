@@ -2703,10 +2703,10 @@ a {
   color: #fff;
 }
 .color--dark {
-  color: #252525;
+  color: #58220f;
 }
 .bg--dark {
-  background: #252525;
+  background: #58220f;
 }
 .bg--dark:not(.nav-bar):not(.bar) {
   color: #ffffff;

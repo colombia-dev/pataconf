@@ -4325,7 +4325,7 @@ img.promo.border--round {
   position: relative;
 }
 .imagebg:not(.image--light) span {
-  color: #484951;
+  color: #fff;
 }
 .imagebg.border--round {
   overflow: hidden;

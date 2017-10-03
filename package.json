@@ -1,0 +1,28 @@
+{
+  "name": "pataconf",
+  "version": "1.0.0",
+  "description": "Sitio web para el evento pataconf",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Colombia-dev\" && exit 1",
+    "add": "all-contributors add",
+    "generate": "all-contributors generate"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colombia-dev/pataconf.git"
+  },
+  "keywords": [
+    "pataconf",
+    "colombia-dev"
+  ],
+  "author": "Colombia-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colombia-dev/pataconf/issues"
+  },
+  "homepage": "https://github.com/colombia-dev/pataconf#readme"
+}

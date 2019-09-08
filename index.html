@@ -1,504 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Pataconf Colombia v2017 | Colombia.dev</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="El festival de programación donde todas las comunidades son bienvenidas a dar una charla.">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/schedule.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons"
-    rel="stylesheet">
-</head>
-
-<body class=" ">
-  <a id="start"></a>
-  <div class="nav-container">
-    <div class="bar bar--sm visible-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-3 col-sm-2">
-            <a href="index.html">
-              <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
-              <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
-            </a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="El festival de programación donde todas las comunidades son bienvenidas a dar una charla.">
+    <!-- Title -->
+    <title>Pataconf 2019 - colombiadev</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Mobile Menu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+    <!-- jQuery -->
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="header-area navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+            </div>
+            <div class="col-md-6 col-sm-12 text-right">
+              <!-- main menu start-->
+              <div class="main-menu">
+                <nav>
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">CFS</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- main menu end-->
+              <div class="mobile-menu"></div>
+            </div>
           </div>
-          <div class="col-xs-9 col-sm-10 text-right">
-            <a href="#" class="hamburger-toggle" data-toggle-class="#menu2;hidden-xs hidden-sm">
-              <i class="icon icon--sm stack-interface stack-menu"></i>
-            </a>
+        </div>
+      </div>
+    </header>
+    <!--hero area start-->
+    <div id="home" class="home-style-2 slider-area">
+      <div class="particles-js" id="particles-js"></div>
+      <div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="slider-content">
+                <h2>PATACONF 2019 <span>Octubre 5 - Medellin</span></h2>
+                <img src="./assets/img/pataconf.png" alt="pataconf" />
+                <h2><span>Call For Speakers</span></h2>
+                <div id="countdown"></div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <nav id="menu2" class="bar bar-2 hidden-xs bar--absolute bar--transparent">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 text-center text-left-sm hidden-xs col-md-push-5">
-            <div class="bar__module">
-              <a href="index.html">
-                <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
-                <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-5 col-md-pull-2">
-            <div class="bar__module">
-              <ul class="menu-horizontal text-left">
-                <li>
-                  <a class="inner-link" href="#home">Home</a>
-                </li>
-                <li>
-                  <a class="inner-link" href="#schedules">Agenda</a>
-                </li>
-                <li>
-                  <a class="inner-link" href="#lugar">Lugar</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-5 text-right text-left-xs text-left-sm">
-            <div class="bar__module">
-              <a class="btn btn--sm btn--primary type--uppercase" href="#cfp">
-                <span class="btn__text">
-                  Llamado a Conferencistas
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="main-container">
-    <section id="home" class="cover height-90 imagebg switchable" data-overlay="1">
-      <div class="background-image-holder">
-        <img alt="background" src="img/conference.png" />
-      </div>
-      <div class="container pos-vertical-center">
-        <div class="row">
-          <div class="col-md-5 col-sm-7">
-            <div class="switchable__text">
-              <h1>
-                Pataconf Colombia
-              </h1>
-              <p class="lead">
-                El festival de programación donde las comunidades son bienvenidas a dar una charla. Jueves 2 de noviembre, Ruta N.
-              </p>
-              <a class="btn btn--primary type--uppercase" target="_blank" href="https://ti.to/colombia-dev/pataconf-2017">
-                <span class="btn__text">
-                  Reclama tu entrada
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-4 col-xs-12">
-            <img alt="image" src="img/pataconf.png" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="cta cta-4 space--xxs">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h3>
-              El 27 de octubre a las 12M COT tendremos la ultima tanda de entradas.
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="schedules" class="switchable  bg--secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">Agenda</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
-            <table class="border--round table--alternate-row">
-              <thead>
-                <tr>
-                  <th class="event-time">Hora</th>
-                  <th class="event-track">Track 1</th>
-                  <th class="event-track">Track 2</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-
-                  <td class="event-time">13:30</td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Data viz: Construcción de un modelo de Thick Data </h5>
-                      <p>
-                        One of my biggest challenges working with clients, was to understand the impact of statistics. That’s why I decided to create
-                        a solution to converge the most important data in a solution. My passion for data analysis is also
-                        academic, that’s why i’m involved in an academic group focused in big data
-                      </p>
-                      <span class="author">
-                        <a href="http://www.marianvilla.co/">Marian Villa</a>
-                      </span>
-                    </div>
-                  </td>
-                  <td class="event-track">
-                      <h5>I made my own Operating System and you can too</h5>
-                      <p>
-                        Years ago when I had no idea about software and OS development, I wanted to push myself to learn something useful for me.
-                        I started by OS development, it was hard and took me months and years to understand how complex is.
-                        This talk will teach and show people the correct way to hobby OS development
-                      </p>
-                      <span class="author">
-                        <a href="http://gioyik.com/">Giovanny Gongora</a>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="event-time">14:00</td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Cómo negociar equity con una startup y no morir en el intento</h5>
-                      <p>
-                        Descripcion por agregar
-                      </p>
-                      <span class="author">
-                        <a href="">Jessica Mercedes</a>
-                      </span>
-                    </div>
-                  </td>
-                  <td class="event-track">
-                    <div>
-
-                      <h5>Programacion funcional, aplicando modelado orientado a tipos con Kotlin</h5>
-                      <p>
-                        Kotlin y RxJava crean un gran combo para poder desarrollar aplicaciones Android, la charla expone una propuesta de arquitectura
-                        basada en eventos, tipos y operadores, con algunos toques de arquitectura limpia y creando un sistema
-                        que puede ser probado de manera simple.
-                      </p>
-                      <span class="author">
-                        <a href="https://medium.com/@iyubinest">Cristian Gomez</a>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="event-time">14:30</td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Si vamos a fallar hagamoslo con clase: Latencia y tolerancia a fallos con Hystrix </h5>
-                      <p>
-                        Los fallos son un elemento inevitable en un software, y en algunos casos no basta solo con capturarlos, en muchos casos es
-                        necesario ser proactivos y reaccionar frente a estos. En la charla presentaremos conceptos básicos
-                        en pro de la resilencia en apps aplicados en Hystrix librería usada en Netflix
-                      </p>
-                      <span class="author">Lex Martinez</span>
-                    </div>
-                  </td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Algoritmos Evolutivos</h5>
-                      <p>
-                        Durante la charla hablaremos de algoritmos inspirados en los principios de evolución de Darwin para resolver problemas de
-                        búsqueda y optimización. En particular hablaremos de mutación, recombinación y selección de individuos
-                        de una población como una aproximación para encontrar soluciones candidatas
-                      </p>
-                      <span class="author">
-                        <a href="https://about.me/orendon">Oscar Rendon</a>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="event-time">15:00</td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Empleados remotos Vs Freelance</h5>
-                      <p>
-                        Descripcion por agregar
-                      </p>
-                      <span class="author">
-                        <a href="#">Lina Marín</a>
-                      </span>
-                    </div>
-                  </td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Hablemos del Blockchain</h5>
-                      <p>
-                        Algunos consideran blockchain como la próxima revolución tecnológica o incluso el internet 3.0. Hay startups levantando millones
-                        de dólares con las ICO (inicial coin offering) y los gobiernos siguen preocupándose con el auge del
-                        Bitcoin. Una introducción al mundo de blockchain y las criptomonedas.
-                      </p>
-                      <span class="author">
-                        <a href="https://twitter.com/RamirezAlex_">Alex Ramirez</a>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="event-time">15:30</td>
-                  <td class="event-track" colspan="2">
-                    <div>
-                      <h4 class="text-center">
-                        🎊 🇨🇴 🎉 PATACONES 🎊 🇨🇴 🎉
-                      </h4>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="event-time">16:00</td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Mónadas para programadores programación funcional</h5>
-                      <p>
-                        La palabra de moda con la programación funcional es Mónada, y por mucho tiempo nos han hecho creer que solo los matemáticos
-                        pueden entender lo que son. ¡No es cierto! En esta charla hablaremos de Mónadas únicamente desde
-                        el punto de vista de programación para entender por qué son tan importantes.
-                      </p>
-                      <span class="author">
-                        <a href="https://twitter.com/gaijinco">Carlos Obregón</a>
-                      </span>
-                    </div>
-                  </td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Comics with CSS Grid CSS, User Experience</h5>
-                      <p>
-                        CSS Grid has come to change the way we do layouts, simplify our lives and make the web more adaptable. A Comic book made
-                        with CSS Grid will give a snap shot of the power and flexibility of this CSS feature.
-                      </p>
-                      <span class="author">
-                        <a href="https://twitter.com/sebash93">Sebastian Hernández</a>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="event-time">16:00</td>
-                  <td class="event-track">
-                    <div>
-                      <h5>(kotlin + design patterns) * ui tests = happy developers</h5>
-                      <p>
-                        Los tests hacen parte del code base de nuestros proyectos y por ende necesitamos hacerlos mantenibles. Hablaremos de como
-                        usando ciertos patrones de diseño como Screen Robots, Builder Pattern en conjunto con Kotlin pueden
-                        ayudarnos a tener unos tests de interfaz mas limpios y mantenibles.
-                      </p>
-                      <span class="author">
-                        <a href="https://github.com/caipivara">Daniel Gómez Rico</a>
-                      </span>
-                    </div>
-                  </td>
-                  <td class="event-track">
-                    <div>
-                      <h5>Una arquitectura de referencia para microservicios </h5>
-                      <p>
-                        Después de entregar un producto en producción con impacto en 74 países y trabajando con un equipo distribuido en 5 zonas
-                        horarias, llegamos a la conclusión que la arquitectura de referencia que utilizamos podría ser una
-                        buena forma de contarle a los asistentes nuestros aprendizajes.
-                      </p>
-                      <span class="author">
-                        <a href="https://yujikiriki.github.io/">Yuji Kiriki</a>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <section class="switchable">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-7">
-            <h2>Un día para compartir conocimiento</h2>
-            <p class="lead">
-              Durante todo este día las comunidades mas importantes del país se reunen para dar sus charlas y compartir conocimiento.
-            </p>
-            <p class="lead">
-              Una oportunidad única donde puedes ser tu, quien este frente de todos los participantes compartiendonos tus conocimientos
-              en la conferencia. No te lo pierdas!
-            </p>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div class="text-block">
-              <h5>Fecha</h5>
-              <p>
-                Noviembre 2 &mdash; 2017
-              </p>
-            </div>
-            <div class="text-block">
-              <h5>Hora</h5>
-              <p>
-                Jueves: 9am - 5pm
-              </p>
-            </div>
-            <div class="text-block">
-              <h5>Lugar</h5>
-              <p>
-                Ruta N
-                <br /> Calle. 67 #52 &mdash; 20
-                <br /> Medellín, Antioquia, Colombia
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--<section id="cfp" class="text-center bg--secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
-            <div class="cta">
-              <h2>Llamado a Conferencistas</h2>
-              <p class="lead lead-justify">
-                La misión de Pataconf es promover diferentes comunidades de desarrollo de software en Colombia. Buscamos charlas de todas
-                las audiencias -principiantes, intermedias y avanzadas-.
-              </p>
-              <p class="lead lead-justify">
-                Las conferencias no tienen que ser técnicas, si crees que hay algún tema que le pueda atraer a la comunidad, te invitamos
-                a enviar la propuesta!
-              </p>
-              <p class="lea">
-                Por ser un evento 100% comunitario y gratuito, no podemos cubrir gastos de transporte u hospedaje
-              </p>
-              <a class="btn btn--primary type--uppercase" target="_blank" href="https://www.papercall.io/event-pataconf">
-                <span class="btn__text">
-                  Registra tu charla 👩🏽‍💻 😍 👨🏽‍💻
-                </span>
-              </a>
-              <p class="type--fine-print">
-                Fecha límite para eviar tu propuesta es
-                <strong>lunes 16 de Octubre</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
-    <section id="lugar" class="text-center bg--secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-md-8">
-            <h2>El Lugar</h2>
-            <p class="lead">
-              Ruta N es el lugar perfecto para compartir y llevar acabo este evento
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="switchable bg--secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-xs-12">
-            <div class="map-container border--round" data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M" data-address="Ruta N, Calle 67, Medellín, Medellin, Antioquia"
-              data-marker-title="Stack" data-map-style="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]"></div>
-          </div>
-          <div class="col-md-5 col-xs-12">
-            <div class="switchable__text">
-              <h3>Ruta N, Medellín
-                <br />Calle 67 #52 — 20</h3>
-              <p class="lead">
-                Info:
-                <a href="https://colombia-dev.slack.com/">Slack</a>
-              </p>
-              <p class="lead">
-                Estamos desde las 9am &mdash; 5pm.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-    <section class="switchable text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-md-8">
-            <h2>Apoyan</h2>
-            <p class="lead">
-              Adoptamos el código de conducta de
-              <a href="https://github.com/colombia-dev/codigo-de-conducta" target="_blank">
-                Colombia.dev
-              </a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-    <section class="text-center space--xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <ul class="list-inline list-inline--images">
-              <li>
-                <img alt="Image" src="img/coldev.png">
-              </li>
-              <li>
-                <img alt="Image" src="img/rutaNlogo.svg">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="space--sm footer-1 text-center-xs bg--dark ">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <img alt="Image" class="logo" src="img/coldev-logo.jpg" />
-            <span class="type--fine-print">&copy;
-              <span class="update-year"></span> Colombia.dev</span>
-          </div>
-          <div class="col-sm-6 text-right text-center-xs">
-            <ul class="social-list list-inline list--hover">
-              <li>
-                <a href="http://twitter.com/colombia_dev" target="_blank">
-                  <i class="socicon socicon-twitter icon icon--xs"></i>
-                  @colombia_dev
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <!--<div class="loader"></div>-->
-  <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
-    <i class="stack-interface stack-up-open-big"></i>
-  </a>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/flickity.min.js"></script>
-  <script src="js/parallax.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/isotope.min.js"></script>
-  <script src="js/ytplayer.min.js"></script>
-  <script src="js/lightbox.min.js"></script>
-  <script src="js/granim.min.js"></script>
-  <script src="js/countdown.min.js"></script>
-  <script src="js/twitterfetcher.min.js"></script>
-  <script src="js/spectragram.min.js"></script>
-  <script src="js/smooth-scroll.min.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
-
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Mobile Menu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Magnific popup -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Magnific popup -->
+    <script src="assets/js/jquery.scrollUp.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow-1.3.0.min.js"></script>
+    <!-- Easing JS -->
+    <script src="assets/js/easing-min.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/waypoints.js"></script>
+    <!-- countdown JS -->
+    <script src="assets/js/countdown.js"></script>
+    <!-- particles JS -->
+    <script src="assets/js/particles.min.js"></script>
+     <script src="assets/js/particles-app.js"></script>
+    <!-- Active JS -->
+    <script src="assets/js/active.js"></script>
+  </body>
 </html>

@@ -42,7 +42,7 @@
     }
   });
 
-  $("#countdown").countdown("2019/10/05", function(event) {
+  $("#countdown").countdown("2019/10/12", function(event) {
     $(this).html(
       event.strftime(
         '<ul class="list-unstyled list-inline"><li>%D <span>days</span></li><li>%H <span>Houre</span></li><li>%M <span>min</span></li><li>%S <Span>sec</Span></li></ul>'

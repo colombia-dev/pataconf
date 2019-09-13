@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Gabriela Niño",
+    "twitter": "@gabynr",
+    "talks": [
+      {
+        "title": "XXXX",
+        "description": "sdfgh dfghj fghj fghj fghj fghj fdghj cdfghj",
+        "track": 1,
+        "time": "11:00am"
+      }
+    ]
+  },
+  {
+    "name": "Ely Alvarado",
+    "twitter": "@elyalvarado",
+    "talks": [
+      {
+        "title": "XXXX",
+        "description": "sdfgh dfghj fghj fghj fghj fghj fdghj cdfghj",
+        "track": 1,
+        "time": "10:00am"
+      }
+    ]
+  }
+]

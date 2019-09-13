@@ -1,0 +1,32 @@
+{
+  "conferenceName": "Pataconf Colombia",
+  "conferenceDescription": "El festival de programación donde las comunidades son bienvenidas a dar una charla.",
+  "conferenceDates": [
+    {
+      "date": "2018-11-05",
+      "start": "11:00 am",
+      "end": "05:00 pm"
+    }
+  ],
+  "conferenceSiteName": "Ruta N",
+  "conferenceSiteAddress": "Calle 67 #52—20",
+  "conferenceSiteMapURL": "http://i.imgur.com/deF3yCm.jpg",
+  "conferenceCity": "Medellín",
+  "conferenceCountry": "Colombia",
+  "conferenceTicketsURL": "http://google.com",
+  "conferenceCFPURL": "http://google.com",
+  "codeOfConductURL": "http://xxxxx",
+  "sponsorshipLevels": [
+    "Gold"
+  ],
+  "copyrightImage":
+    {
+    "name": "coldev logo",
+    "src": "../img/coldev-logo.jpg"
+    },
+  "copyright": "2019 Colombia.dev",
+  "social":
+    {
+      "twitter": "@colombia.dev"
+    }
+}

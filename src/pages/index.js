@@ -6,6 +6,7 @@ import Speakers from "../components/Speakers"
 import Footer from "../components/Footer"
 import Sponsors from "../components/Sponsors"
 import Lugar from "../components/Lugar"
+import Body from "../components/Body"
 
 class index extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class index extends React.Component {
         <HeroBanner />
         <GeneralSchedule />
         <Speakers />
+        <Body />
         <Lugar />
         <Sponsors />
         <Footer />

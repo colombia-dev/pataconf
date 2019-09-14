@@ -8,6 +8,14 @@
       "end": "05:00 pm"
     }
   ],
+  "conferenceSiteBody":{
+    "title": "Un día para compartir conocimiento",
+    "paragraph":
+     ["Durante todo este día las comunidades mas importantes del país se reunen para dar sus charlas y compartir conocimiento.",
+       "Una oportunidad única donde puedes ser tu, quien este frente de todos los participantes compartiendonos tus conocimientos en la conferencia. No te lo pierdas!"
+     ]
+  },
+
   "conferenceSiteName": "Ruta N",
   "conferenceSiteAddress": "Calle 67 #52—20",
   "conferenceSiteMapURL": "http://i.imgur.com/deF3yCm.jpg",

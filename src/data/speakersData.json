@@ -1,25 +1,74 @@
 [
   {
-    "name": "Gabriela Niño",
+    "name": "Kevin Kraus",
     "twitter": "@gabynr",
     "talks": [
       {
-        "title": "XXXX",
-        "description": "sdfgh dfghj fghj fghj fghj fghj fdghj cdfghj",
+        "title": "Usabilidad contextual",
+        "description": "Emprender, ser ágiles, ganar mercado, iterar! La importancia de pensar productos según el contexto de uso hará que sean productos innovadores, de gran adopción o chatarra tecnológica. Basado en experiencias personales la charla es sobre Usabilidad contextual, un término que yo mismo inventé. ",
         "track": 1,
-        "time": "11:00am"
+        "time": "11:00:00"
       }
     ]
   },
   {
-    "name": "Ely Alvarado",
+    "name": "Álvaro José Agámez Licha",
     "twitter": "@elyalvarado",
     "talks": [
       {
-        "title": "XXXX",
-        "description": "sdfgh dfghj fghj fghj fghj fghj fdghj cdfghj",
+        "title": "Desarrollo Web en Windows",
+        "description": "Desarrollar proyectos web en Windows no siempre ha sido bien visto por muchos devs, a veces por desconocimiento del SO en sí; mi objetivo es desmitificar este concepto y mostrar cómo ha cambiado este tema en los últimos años, mostrando las herramientas necesarias para hacerlo de la mejor manera.",
+        "track": 2,
+        "time": "11:00:00"
+      }
+    ]
+  },
+
+  {
+    "name": "Carlos Galarza",
+    "twitter": "@gabynr",
+    "talks": [
+      {
+        "title": "Simplificando UIs con maquinas de estados",
+        "description": "Que hace de a las UIs tan complejas? Como podemos simplificarlas? Para responder a esta pregunta me trasladare 30 años atrás a un paper escrito por David Harel cuando trabajaba para la fuerza aérea israelí en el cual crea una extensión de las maquinas de estado y las llama Statecharts.  ",
         "track": 1,
-        "time": "10:00am"
+        "time": "11:30:00"
+      }
+    ]
+  },
+  {
+    "name": "Alejandro Estrada",
+    "twitter": "@elyalvarado",
+    "talks": [
+      {
+        "title": "Como pase de ser un ingeniero administrador a convertirme en un desarrollador tiempo completo",
+        "description": "En esta charla les contare como pase de trabajar como analista financiero a convertirme en un desarrollador backend tiempo completo, donde en el primer año como desarollador he contribuido a algunos proyectos OSS y he creado algunos otros, hasta el punto de dar mi primera charla en JSConf Col 2018.",
+        "track": 2,
+        "time": "11:30:00"
+      }
+    ]
+  },
+  {
+    "name": "Carlos Galarza",
+    "twitter": "@gabynr",
+    "talks": [
+      {
+        "title": "Simplificando UIs con maquinas de estados",
+        "description": "Que hace de a las UIs tan complejas? Como podemos simplificarlas? Para responder a esta pregunta me trasladare 30 años atrás a un paper escrito por David Harel cuando trabajaba para la fuerza aérea israelí en el cual crea una extensión de las maquinas de estado y las llama Statecharts.",
+        "track": 1,
+        "time": "14:00:00"
+      }
+    ]
+  },
+  {
+    "name": "Diego Botia",
+    "twitter": "@gynr",
+    "talks": [
+      {
+        "title": "Serverless desde cero",
+        "description": "En esta charla se dará una introducción general a las Arquitecturas Serverless presentando la plataforma agnóstica Fn Project que facilita crear funciones como servicio de una manera ágil y fácil sin importar el lenguaje o plataforma de desarrollo. Se presentará ademas su integración con Docker.",
+        "track": 2,
+        "time": "13:30:00"
       }
     ]
   }

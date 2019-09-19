@@ -1,8 +1,7 @@
 import React from "react"
 import NavBar from "../components/Navbar"
 import HeroBanner from "../components/HeroBanner"
-import GeneralSchedule from "../components/GeneralSchedule"
-import Speakers from "../components/Speakers"
+import Schedule from "../components/Schedule"
 import Footer from "../components/Footer"
 import Sponsors from "../components/Sponsors"
 import Lugar from "../components/Lugar"
@@ -14,8 +13,8 @@ class index extends React.Component {
       <div>
         <NavBar />
         <HeroBanner />
-        <GeneralSchedule />
-        <Speakers />
+
+        <Schedule />
         <Body />
         <Lugar />
         <Sponsors />

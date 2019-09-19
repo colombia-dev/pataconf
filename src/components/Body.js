@@ -1,32 +1,27 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
+import { Lead } from "./Lead"
 
 const StyledDivPrincipal = styled.div`
-  width: 1363px;
+  width: 100vw;
   padding-top: 7.42857143em;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
+  justify-content: space-around;
 `
 
 const StyledDivBody = styled.div`
-  width: 58.33333333%;
+  width: 60%;
   padding-left: 15px;
   padding-right: 15px;
 `
 
-const StyledH2 = styled.h2`
-  margin-bottom: 0.78787878787879em;
-  font-size: 2.35714286em;
-  line-height: 1.36363636em;
-  color: #252525;
-  font-weight: 300;
-`
 const StyledDivBodyDate = styled.div`    
-width: 25%;
+  width: 25%;
 }`
 
 const Body = () => {
@@ -61,9 +56,9 @@ const Body = () => {
   return (
     <StyledDivPrincipal>
       <StyledDivBody>
-        <StyledH2>{conferenceSiteBody.title}</StyledH2>
+        <h2>{conferenceSiteBody.title}</h2>
         {conferenceSiteBody.paragraph.map(p => (
-          <p>{p}</p>
+          <Lead>{p}</Lead>
         ))}
       </StyledDivBody>
 

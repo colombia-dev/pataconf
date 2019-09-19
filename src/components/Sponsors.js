@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
+import { Lead } from "./Lead"
 
 const StyledDiv = styled.div`
   text-align: center;
@@ -10,24 +11,20 @@ const StyledDiv = styled.div`
 const StyledDivApoya = styled.div`
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 87.5%;
 `
 
-const StyledH2 = styled.h2`
-  margin-bottom: 0.78787878787879em;
-      font-size: 2.35714286em;
-    line-height: 1.36363636em;
-    font-weight: 300;
-    color: #252525;
-    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-}
+const SponsorLevel = styled.div`
+  padding: 3.71428571em;
 `
 
-const StyledDivSponsor = styled.div`
+const SponsorList = styled.div`
+  display: flex;
+  justify-content: space-around;
   padding-bottom: 3.71428571em;
+  align-items: flex-start;
 `
 
-const StyledDivImageSponsor = styled.div`
+const SponsorImage = styled.div`
   display: inline-flex;
   vertical-align: middle;
 `
@@ -63,36 +60,32 @@ const Sponsors = () => {
   return (
     <StyledDiv>
       <StyledDivApoya>
-        <StyledH2>Apoyan</StyledH2>
-        <p>
+        <h2>Apoyan</h2>
+        <Lead>
           Adoptamos el código de conducta de{" "}
           <a href="https://github.com/colombia-dev/codigo-de-conducta">
-            {" "}
             Colombia.dev
           </a>
-        </p>{" "}
+        </Lead>
       </StyledDivApoya>
 
-      <StyledDivSponsor>
-        {sponsorshipLevels.map(level => (
-          <div key={level}>
-            <h1>{level}</h1>
-
-            <div>
-              {sponsors
-                .filter(sponsor => sponsor.level === level)
-                .map(({ image }) => (
-                  <StyledDivImageSponsor>
-                    <Img
-                      key={image.name}
-                      fixed={image.src.childImageSharp.fixed}
-                    />
-                  </StyledDivImageSponsor>
-                ))}
-            </div>
-          </div>
-        ))}
-      </StyledDivSponsor>
+      {sponsorshipLevels.map(level => (
+        <SponsorLevel>
+          <h3>{level}</h3>
+          <SponsorList key={level}>
+            {sponsors
+              .filter(sponsor => sponsor.level === level)
+              .map(({ image }) => (
+                <SponsorImage>
+                  <Img
+                    key={image.name}
+                    fixed={image.src.childImageSharp.fixed}
+                  />
+                </SponsorImage>
+              ))}
+          </SponsorList>
+        </SponsorLevel>
+      ))}
     </StyledDiv>
   )
 }

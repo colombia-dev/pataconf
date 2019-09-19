@@ -122,7 +122,7 @@ const Schedule = () => {
   }
 
   return (
-    <StyleDivPrincipal>
+    <StyleDivPrincipal id="schedule">
       <StyledH2>Agenda</StyledH2>
       <StyledTable>
         <thead>

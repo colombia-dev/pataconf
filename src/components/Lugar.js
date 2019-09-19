@@ -75,7 +75,7 @@ const Lugar = () => {
     conferenceSiteMapURL,
   } = data.dataJson
   return (
-    <div>
+    <div id="lugar">
       <StyledDivLugar>
         <StyledH2Lugar>El Lugar</StyledH2Lugar>
         <StyledP>

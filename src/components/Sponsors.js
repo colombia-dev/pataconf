@@ -3,14 +3,11 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import { Lead } from "./Lead"
-
-const StyledDiv = styled.div`
-  text-align: center;
-`
+import { Section } from "./Section"
 
 const StyledDivApoya = styled.div`
-  padding-left: 15px;
-  padding-right: 15px;
+  text-align: center;
+  padding: 0 15px;
 `
 
 const SponsorLevel = styled.div`
@@ -58,7 +55,7 @@ const Sponsors = () => {
   const { sponsorshipLevels } = sponsorsData.dataJson
   const sponsors = sponsorsData.allSponsorsDataJson.edges.map(e => e.node)
   return (
-    <StyledDiv>
+    <Section>
       <StyledDivApoya>
         <h2>Apoyan</h2>
         <Lead>
@@ -71,7 +68,10 @@ const Sponsors = () => {
 
       {sponsorshipLevels.map(level => (
         <SponsorLevel>
-          <h3>{level}</h3>
+          {sponsorshipLevels.length > 1 ?
+            <h3>{level}</h3>
+            : null
+          }
           <SponsorList key={level}>
             {sponsors
               .filter(sponsor => sponsor.level === level)
@@ -86,7 +86,7 @@ const Sponsors = () => {
           </SponsorList>
         </SponsorLevel>
       ))}
-    </StyledDiv>
+    </Section>
   )
 }
 

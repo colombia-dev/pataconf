@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Lead } from "./Lead"
 import styled from "styled-components"
+import { Section } from "./Section"
 
 const LocationIntro = styled.div`
   text-align: center;
@@ -14,8 +15,10 @@ const LocationDetail = styled.div`
 `
 const Map = styled.img`
   width: 50%;
-  position: relative;
-  min-height: 1px;
+  max-width: 500px;
+  min-width: 320px;
+  max-height: 500px;
+  object-fit: contain;
   padding-left: 45px;
   padding-right: 15px;
 `
@@ -53,7 +56,7 @@ const Lugar = () => {
     conferenceSiteMapURL,
   } = data.dataJson
   return (
-    <div id="lugar">
+    <Section secondary id="lugar">
       <LocationIntro>
         <h2>El Lugar</h2>
         <Lead>
@@ -78,7 +81,7 @@ const Lugar = () => {
           ))}
         </Address>
       </LocationDetail>
-    </div>
+    </Section>
   )
 }
 

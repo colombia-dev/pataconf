@@ -5,31 +5,24 @@ import Img from "gatsby-image"
 
 const StyledFooter = styled.footer`
   background: #58220f;
-  width: 1363px;
   height: 180.66px;
   display: flex;
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
   font-size: 0.85714286em;
+  justify-content: space-between;
 `
 
 const StyledDivSocial = styled.div`
-  width: 585px;
-  height: 55px;
-  display: inline-flex;
-  width: 585px;
   height: 55px;
   padding-top: 60px;
-  display: flex;
-  justify-content: space-around;
+  padding-right: 5vw;
 `
 
 const StyledPCoyrightI = styled.p`
-  display: inline-flex;
-  width: 585px;
   height: 55px;
   padding-top: 60px;
-  padding-left: 200px;
+  padding-left: 5vw;
 `
 
 const StyledPSocial = styled.p`

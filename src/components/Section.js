@@ -10,10 +10,10 @@ export const Section = styled.section`
       ? ""
       : "border-top: 1px solid #ebebeb;"}
 
-  ${({ bgImage }) => `\
+  ${({ bgImage }) => bgImage ? `\
     background-image: url(\"${bgImage}\");\
     background-size: cover;\
     width: 100vw;\
     height: 100vh;\
-  `}
+  ` : ""}
 `

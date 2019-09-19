@@ -13,7 +13,6 @@ class index extends React.Component {
       <div>
         <NavBar />
         <HeroBanner />
-
         <Schedule />
         <Body />
         <Lugar />

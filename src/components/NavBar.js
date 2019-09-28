@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql, useStaticQuery } from "gatsby"
 
 const NavContainer = styled.div`
   position: absolute;
@@ -7,17 +8,15 @@ const NavContainer = styled.div`
   z-index: 99;
   width: 100%;
 `
-
 const ExtendedMenu = styled.div`
     width: 85vw;
     margin: 0 5vw;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 550px) {
+    @media (max-width: 750px) {
       display: none;
     }
 `
-
 const ExtendedNavLinks = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -26,31 +25,25 @@ const ExtendedNavLinks = styled.div`
   top: 6px;
 
 `
-
 const ExtendedCallToActions = styled.div`
   font-weight: bold;
   top: 6px;
   display: flex;
   justify-content: flex-end;
 `
-
 const ExtendedLogo = styled.div`
-  flex-grow: 1;
   position: absolute;
-  width: 95vw;
-  text-align: center;
-  @media (max-width: 700px) {
+  margin: 0 44.5%;
+  @media (max-width: 1010px) {
     display: none;
   }
 `
-
 const StyledImg = styled.img`
   max-height: 1.85714286em;
   position: relative;
   top: 4px;
   vertical-align: middle;
 `
-
 const ExtendedNavLink = styled.a`
   font-size: 15px;
   color: #ffd92d;
@@ -61,7 +54,6 @@ const ExtendedNavLink = styled.a`
     color: white; 
   }
 `
-
 const ExtendedCallToAction= styled.a`
   background: #fed92e;
   padding: 0.30952381em 1.85714286em;
@@ -83,7 +75,6 @@ const ExtendedCallToAction= styled.a`
     background-color: #fef042;
   }
 `
-
 const HamburgerMenu = styled.div`
     padding-left: 15px;
     padding-right: 15px;
@@ -91,12 +82,12 @@ const HamburgerMenu = styled.div`
     margin: 0 5vw;
     display: flex;
     justify-content: flex-start;
-    @media (min-width: 550px) {
+    @media (min-width: 750px) {
       display: none;
     }
 `
 
-// Adapted from: https://codepen.io/erikterwan/pen/EVzeRP
+// Pure CSS Hamburger Menu Adapted from: https://codepen.io/erikterwan/pen/EVzeRP
 const MenuToggle = styled.div`
   display: block;
   position: relative;
@@ -108,7 +99,6 @@ const MenuToggle = styled.div`
   -webkit-user-select: none;
   user-select: none;
 `
-
 const ToggleInput = styled.input`
   display: block;
   width: 40px;
@@ -124,7 +114,6 @@ const ToggleInput = styled.input`
   
   -webkit-touch-callout: none;
 `
-
 const Hamburger = styled.span`
  display: block;
   width: 33px;
@@ -166,7 +155,6 @@ const Hamburger = styled.span`
     transform: rotate(-45deg) translate(0, -1px);
   }
 `
-
 const HamburgerMenuItems = styled.ul`
   position: absolute;
   width: 300px;
@@ -191,7 +179,6 @@ const HamburgerMenuItems = styled.ul`
     text-decoration: none;
   }
 `
-
 const HamburgerMenuItem = styled.li`
   padding: 10px 0;
   font-size: 15px;
@@ -216,7 +203,7 @@ const HamburgerCallToAction = styled.li`
   font-size: 15px;
   color: black;
   font-weight: 700;
-  margin: 50px 50px 0 0;
+  margin: 10px 50px 0 0;
   text-decoration: none;
   text-align: center;
   :hover {
@@ -224,45 +211,72 @@ const HamburgerCallToAction = styled.li`
     border-color: gray;
     background-color: #fef042;
   }
-`
-class NavBar extends React.Component {
-  render() {
-    return (
-      <NavContainer>
-        <ExtendedLogo>
-          <StyledImg src="logo-dark.png" />
-        </ExtendedLogo>
-        <ExtendedMenu>
-          <ExtendedNavLinks>
-            <ExtendedNavLink href="#home">Home</ExtendedNavLink>
-            <ExtendedNavLink href="#schedule">Agenda</ExtendedNavLink>
-            <ExtendedNavLink href="#lugar">Lugar</ExtendedNavLink>
-          </ExtendedNavLinks>
-          <ExtendedCallToActions>
-            <ExtendedCallToAction href="#home">Reclama tu Entrada</ExtendedCallToAction>
-          </ExtendedCallToActions>
-      </ExtendedMenu>
-
-        <HamburgerMenu>
-          <MenuToggle>
-            <ToggleInput type="checkbox" />
-
-            <Hamburger/>
-            <Hamburger/>
-            <Hamburger/>
-
-            <HamburgerMenuItems>
-              <a href="#home"><HamburgerMenuItem>Home</HamburgerMenuItem></a>
-              <a href="#schedule"><HamburgerMenuItem>Agenda</HamburgerMenuItem></a>
-              <a href="#lugar"><HamburgerMenuItem>Lugar</HamburgerMenuItem></a>
-              <a href="#lugar"><HamburgerCallToAction>Reclama tu Entrada</HamburgerCallToAction></a>
-            </HamburgerMenuItems>
-          </MenuToggle>
-        </HamburgerMenu>
-
-      </NavContainer>
-    )
+  
+  &.first {
+    margin-top: 50px;
   }
+`
+
+const NavBar = () => {
+  const scheduleData = useStaticQuery(graphql`
+    query navBarLinks {
+      dataJson {
+        conferenceTicketsURL
+        conferenceCFPURL
+        callForProposalIsOpen
+        ticketSaleIsOpen
+      }
+    }
+  `)
+
+  const { conferenceTicketsURL, conferenceCFPURL, callForProposalIsOpen, ticketSaleIsOpen } = scheduleData.dataJson
+
+  return (
+    <NavContainer>
+      <ExtendedLogo>
+        <StyledImg src="logo-dark.png" />
+      </ExtendedLogo>
+      <ExtendedMenu>
+        <ExtendedNavLinks>
+          <ExtendedNavLink href="#home">Home</ExtendedNavLink>
+          <ExtendedNavLink href="#schedule">Agenda</ExtendedNavLink>
+          <ExtendedNavLink href="#lugar">Lugar</ExtendedNavLink>
+        </ExtendedNavLinks>
+        <ExtendedCallToActions>
+          {ticketSaleIsOpen && <ExtendedCallToAction target="_blank" href={conferenceTicketsURL}>Reclama tu Entrada</ExtendedCallToAction>}
+          {callForProposalIsOpen && <ExtendedCallToAction target="_blank" href={conferenceCFPURL}>Envía tu Charla</ExtendedCallToAction>}
+        </ExtendedCallToActions>
+    </ExtendedMenu>
+
+      <HamburgerMenu>
+        <MenuToggle>
+          <ToggleInput type="checkbox" />
+
+          <Hamburger/>
+          <Hamburger/>
+          <Hamburger/>
+
+          <HamburgerMenuItems>
+            <a href="#home"><HamburgerMenuItem>Home</HamburgerMenuItem></a>
+            <a href="#schedule"><HamburgerMenuItem>Agenda</HamburgerMenuItem></a>
+            <a href="#lugar"><HamburgerMenuItem>Lugar</HamburgerMenuItem></a>
+            {
+              ticketSaleIsOpen &&
+              <a target="_blank" href={conferenceTicketsURL}>
+                <HamburgerCallToAction className="first">Reclama tu Entrada</HamburgerCallToAction>
+              </a>
+            }
+            {
+              callForProposalIsOpen &&
+              <a target="_blank" href={conferenceCFPURL}>
+                <HamburgerCallToAction>Envía tu Charla</HamburgerCallToAction>
+              </a>
+            }
+          </HamburgerMenuItems>
+        </MenuToggle>
+      </HamburgerMenu>
+    </NavContainer>
+  )
 }
 
 export default NavBar

@@ -225,11 +225,18 @@ const NavBar = () => {
         conferenceCFPURL
         callForProposalIsOpen
         ticketSaleIsOpen
+        scheduleIsLive
       }
     }
   `)
 
-  const { conferenceTicketsURL, conferenceCFPURL, callForProposalIsOpen, ticketSaleIsOpen } = scheduleData.dataJson
+  const {
+    conferenceTicketsURL,
+    conferenceCFPURL,
+    callForProposalIsOpen,
+    ticketSaleIsOpen,
+    scheduleIsLive
+  } = scheduleData.dataJson
 
   return (
     <NavContainer>
@@ -239,7 +246,7 @@ const NavBar = () => {
       <ExtendedMenu>
         <ExtendedNavLinks>
           <ExtendedNavLink href="#home">Home</ExtendedNavLink>
-          <ExtendedNavLink href="#schedule">Agenda</ExtendedNavLink>
+          { scheduleIsLive && <ExtendedNavLink href="#schedule">Agenda</ExtendedNavLink> }
           <ExtendedNavLink href="#lugar">Lugar</ExtendedNavLink>
         </ExtendedNavLinks>
         <ExtendedCallToActions>
@@ -258,7 +265,7 @@ const NavBar = () => {
 
           <HamburgerMenuItems>
             <a href="#home"><HamburgerMenuItem>Home</HamburgerMenuItem></a>
-            <a href="#schedule"><HamburgerMenuItem>Agenda</HamburgerMenuItem></a>
+            { scheduleIsLive && <a href="#schedule"><HamburgerMenuItem>Agenda</HamburgerMenuItem></a> }
             <a href="#lugar"><HamburgerMenuItem>Lugar</HamburgerMenuItem></a>
             {
               ticketSaleIsOpen &&

@@ -12,18 +12,28 @@ const StyledDivApoya = styled.div`
 
 const SponsorLevel = styled.div`
   padding: 3.71428571em;
+  :last-child {
+    padding-bottom: 0;
+  }
 `
 
 const SponsorList = styled.div`
   display: flex;
   justify-content: space-around;
-  padding-bottom: 3.71428571em;
   align-items: flex-start;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
 `
 
 const SponsorImage = styled.div`
   display: inline-flex;
   vertical-align: middle;
+  @media (max-width: 550px) {
+    padding-bottom: 5em;
+  }
 `
 
 const Sponsors = () => {
@@ -31,6 +41,8 @@ const Sponsors = () => {
     query SponsorsQuery {
       dataJson {
         sponsorshipLevels
+        codeOfConductOrganization
+        codeOfConductURL
       }
       allSponsorsDataJson {
         edges {
@@ -52,7 +64,7 @@ const Sponsors = () => {
     }
   `)
 
-  const { sponsorshipLevels } = sponsorsData.dataJson
+  const { sponsorshipLevels, codeOfConductOrganization, codeOfConductURL } = sponsorsData.dataJson
   const sponsors = sponsorsData.allSponsorsDataJson.edges.map(e => e.node)
   return (
     <Section>
@@ -60,8 +72,8 @@ const Sponsors = () => {
         <h2>Apoyan</h2>
         <Lead>
           Adoptamos el código de conducta de{" "}
-          <a href="https://github.com/colombia-dev/codigo-de-conducta">
-            Colombia.dev
+          <a href={codeOfConductURL}>
+            {codeOfConductOrganization}
           </a>
         </Lead>
       </StyledDivApoya>

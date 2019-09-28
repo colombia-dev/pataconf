@@ -1,6 +1,7 @@
 import React from "react"
 import { Reset } from "styled-reset"
 import styled, { createGlobalStyle } from "styled-components"
+import 'array-flat-polyfill'
 
 import HeroBanner from "../components/HeroBanner"
 import Schedule from "../components/Schedule"

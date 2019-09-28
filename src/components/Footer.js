@@ -13,21 +13,24 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
 `
 
-const StyledDivSocial = styled.div`
-  height: 55px;
-  padding-top: 60px;
-  padding-right: 5vw;
-`
-
-const StyledPCoyrightI = styled.p`
+const Copyright = styled.p`
   height: 55px;
   padding-top: 60px;
   padding-left: 5vw;
 `
 
-const StyledPSocial = styled.p`
-  margin-left: 25px;
-  margin-top: auto;
+const CopyrightTwitter = styled.p`
+  height: 55px;
+  padding-top: 60px;
+  padding-right: 5vw;
+`
+
+const CopyrightImage = styled(Img)`
+  display: inline-block;
+`
+
+const CopyrightHolder = styled.span`
+  vertical-align: top;
 `
 
 const Footer = () => {
@@ -54,13 +57,11 @@ const Footer = () => {
   const { copyright, social, copyrightImage } = data.dataJson
   return (
     <StyledFooter>
-      <StyledPCoyrightI>
-        <Img fixed={copyrightImage.src.childImageSharp.fixed} />
-        <p>{copyright}</p>
-      </StyledPCoyrightI>
-      <StyledDivSocial>
-        <StyledPSocial>{social.twitter}</StyledPSocial>
-      </StyledDivSocial>
+      <Copyright>
+        <CopyrightImage fixed={copyrightImage.src.childImageSharp.fixed} />
+        <CopyrightHolder> © {copyright}</CopyrightHolder>
+      </Copyright>
+      <CopyrightTwitter>{social.twitter}</CopyrightTwitter>
     </StyledFooter>
   )
 }

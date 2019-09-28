@@ -42,6 +42,9 @@ const StyledTdSchedule = styled.td`
 const Schedule = () => {
   const scheduleData = useStaticQuery(graphql`
     query allGeneralSchedule {
+      dataJson {
+        scheduleIsLive
+      }
       allGeneralScheduleJson {
         edges {
           node {
@@ -67,6 +70,12 @@ const Schedule = () => {
       }
     }
   `)
+
+  const scheduleIsLive = scheduleData.dataJson.scheduleIsLive
+
+  if(!scheduleIsLive) {
+    return null
+  }
 
   const generalschedule = scheduleData.allGeneralScheduleJson.edges.map(
     g => g.node

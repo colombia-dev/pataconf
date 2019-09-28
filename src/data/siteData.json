@@ -1,6 +1,6 @@
 {
   "conferenceName": "Pataconf Colombia",
-  "scheduleIsLive": false,
+  "scheduleIsLive": true,
   "callForProposalIsOpen": false,
   "ticketSaleIsOpen": true,
   "conferenceDescription": "El festival de programación donde las comunidades son bienvenidas a dar una charla.",

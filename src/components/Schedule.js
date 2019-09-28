@@ -26,6 +26,12 @@ const StyledTable = styled.table`
   margin: 0 60px;
   border: 1px solid #ececec;
   padding: 0.92857143em;
+  @media (max-width: 800px) {
+    font-size: 0.7em;
+  }
+  @media (max-width: 500px) {
+    margin: 0;
+  }
 `
 const StyledThHora = styled.th`
   padding: 0.92857143em;
@@ -37,6 +43,29 @@ const StyledTdSchedule = styled.td`
   color: #666666;
   font-weight: 400;
   font-size: 87.5%;
+`
+
+const StyledTrSchedule = styled.tr`
+  border-top: 1px solid #ececec;
+`
+
+const TdTrack = styled.td`
+  padding: 10px;
+  :hover {
+    background-color: aliceblue;
+  }
+`
+
+const TalkDescription = styled.p`
+  font-weight: 300;
+  line-height: 1.5em;
+  color: gray;
+  padding: 10px 0;
+`
+const TwitterLink = styled.a`
+  color: #37dbff;
+  text-decoration: none;
+  font-style: italic;
 `
 
 const Schedule = () => {
@@ -107,20 +136,23 @@ const Schedule = () => {
     generalschedule.filter(gs => gs.time === t).length > 0
 
   const generalScheduleForTime = time => (
-    <td colSpan={tracks.length}>
+    <TdTrack colSpan={tracks.length}>
       <StyledH4>{generalschedule.find(gs => gs.time === time).name}</StyledH4>
-    </td>
+    </TdTrack>
   )
 
   const talkForTrackAndTime = (track, time) => {
     const talk = allTalks.find(t => t.time === time && t.track === track)
     return talk ? (
-      <td>
+      <TdTrack>
         <h5>{talk.title}</h5>
-        <p>{talk.description}</p>
-        <p>{talk.name}</p>
-        <a href={`https://twitter.com/${talk.twitter}`}>{talk.twitter}</a>
-      </td>
+        <TalkDescription>{talk.description}</TalkDescription>
+        <span>
+          {talk.name}
+          {" "}
+          <TwitterLink href={`https://twitter.com/${talk.twitter}`}>{talk.twitter}</TwitterLink>
+        </span>
+      </TdTrack>
     ) : (
       <td></td>
     )
@@ -140,13 +172,13 @@ const Schedule = () => {
         </thead>
         <tbody>
           {allTimes.map(time => (
-            <tr>
+            <StyledTrSchedule>
               <StyledTdSchedule>{time}</StyledTdSchedule>
 
               {isGeneralSchedule(time)
                 ? generalScheduleForTime(time)
                 : tracks.map(track => talkForTrackAndTime(track, time))}
-            </tr>
+            </StyledTrSchedule>
           ))}
         </tbody>
       </StyledTable>

@@ -45,6 +45,12 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.78571429em;
     line-height: 1.5em;
   }
+  
+  h4 {
+    margin-bottom: 10px;
+    font-size: 1.35714286em;
+    line-height: 1.68421053em;
+  }
 `
 
 const Sections = styled.div`

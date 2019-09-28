@@ -4,29 +4,50 @@ import { Lead } from "./Lead"
 import styled from "styled-components"
 import { Section } from "./Section"
 
+
+const AddressSection = styled(Section)`
+  @media (max-width: 950px) {
+    font-size: 0.8em;
+  }
+`
+
 const LocationIntro = styled.div`
   text-align: center;
-  padding-top: 7.42857143em;
-  padding-bottom: 7.42857143em;
+  padding: 0 2em 3em;
 `
 const LocationDetail = styled.div`
   display: flex;
   justify-content: space-around;
+  padding: 0 2em;
+  @media (max-width: 560px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 0.8em;
+  }
 `
 const Map = styled.img`
   width: 50%;
   max-width: 500px;
-  min-width: 320px;
   max-height: 500px;
   object-fit: contain;
   padding-left: 45px;
   padding-right: 15px;
+  @media (max-width: 560px) {
+    width: 90%;
+    padding-right: 45px;
+  }
 `
 
 const Address = styled.div`
   padding-left: 15px;
   width: 40%;
   margin-top: 1.85714286em;
+    @media (max-width: 560px) {
+    width: 90%;
+    padding: 15px;
+    margin: 0.5em 0;
+    font-size: 1.1em;
+  }
 `
 
 const Lugar = () => {
@@ -37,11 +58,6 @@ const Lugar = () => {
         conferenceSiteName
         conferenceCity
         conferenceCountry
-        conferenceDates {
-          date
-          start
-          end
-        }
         conferenceSiteMapURL
       }
     }
@@ -52,11 +68,10 @@ const Lugar = () => {
     conferenceSiteName,
     conferenceCity,
     conferenceCountry,
-    conferenceDates,
     conferenceSiteMapURL,
   } = data.dataJson
   return (
-    <Section secondary id="lugar">
+    <AddressSection secondary id="lugar">
       <LocationIntro>
         <h2>El Lugar</h2>
         <Lead>
@@ -68,20 +83,14 @@ const Lugar = () => {
         <Map src={conferenceSiteMapURL} />
 
         <Address>
-          <h3>
+          <h4>
             {conferenceSiteName}, {conferenceCity} {conferenceCountry}
             <br />
             {conferenceSiteAddress}
-          </h3>
-
-          {conferenceDates.map(({ date, end, start }) => (
-            <Lead>
-              Estamos desde {start} {end}
-            </Lead>
-          ))}
+          </h4>
         </Address>
       </LocationDetail>
-    </Section>
+    </AddressSection>
   )
 }
 

@@ -2,27 +2,29 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import { Lead } from "./Lead"
+import { Section } from "./Section"
 
-const StyledDivPrincipal = styled.div`
-  width: 100vw;
-  padding-top: 7.42857143em;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+const About = styled(Section)`
   display: flex;
   justify-content: space-around;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    font-size: 0.8em;
+  }
 `
 
 const StyledDivBody = styled.div`
-  width: 60%;
-  padding-left: 15px;
-  padding-right: 15px;
+  flex-grow: 2;
+  padding: 0 75px;
 `
 
 const StyledDivBodyDate = styled.div`    
-  width: 25%;
-}`
+  flex-grow: 1;
+  padding: 0 75px 0 0;
+  @media (max-width: 1000px) {
+    padding: 75px 75px 0;
+  }
+`
 
 const Body = () => {
   const data = useStaticQuery(graphql`
@@ -54,7 +56,7 @@ const Body = () => {
     conferenceDates,
   } = data.dataJson
   return (
-    <StyledDivPrincipal>
+    <About id="about">
       <StyledDivBody>
         <h2>{conferenceSiteBody.title}</h2>
         {conferenceSiteBody.paragraph.map(p => (
@@ -62,24 +64,18 @@ const Body = () => {
         ))}
       </StyledDivBody>
 
-      {conferenceDates.map(({ date, start, end }) => (
         <StyledDivBodyDate>
-          <h5>Fecha</h5>
-          <p>{date}</p>
-          <h5>Hora</h5>
-          <p>
-            {" "}
-            Sabado: {start} {end}
-          </p>
-          <h5>Lugar</h5>
+          <h4>Fecha:</h4>
+          {conferenceDates.map(({ date, start, end }) => (
+            <h5>{date} desde las {start} hasta las {end}</h5>
+          ))}
+
+          <h4>Lugar:</h4>
           <p>{conferenceSiteName}</p>
           <p>{conferenceSiteAddress}</p>
-          <p>
-            {conferenceCity} {conferenceCountry}{" "}
-          </p>
+          <p>{conferenceCity} {conferenceCountry}</p>
         </StyledDivBodyDate>
-      ))}
-    </StyledDivPrincipal>
+    </About>
   )
 }
 

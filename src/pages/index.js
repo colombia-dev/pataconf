@@ -10,6 +10,7 @@ import Sponsors from "../components/Sponsors"
 import Lugar from "../components/Lugar"
 import Body from "../components/Body"
 import NavBar from "../components/NavBar"
+import SEO from "../components/SEO"
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
@@ -70,6 +71,7 @@ class index extends React.Component {
       <>
         <Reset />
         <GlobalStyle />
+        <SEO />
         <NavBar />
         <Sections>
           <HeroBanner />

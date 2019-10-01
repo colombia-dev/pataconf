@@ -1,8 +1,12 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
+
 import { Section } from "./Section"
 
+const Container = styled(Section)`
+  padding: 7em 0;
+`
 const StyledH4 = styled.h4`
   text-align: center;
   margin-bottom: 0.78787878787879em;
@@ -159,7 +163,7 @@ const Schedule = () => {
   }
 
   return (
-    <Section id="schedule" secondary>
+    <Container id="schedule" secondary>
       <StyledH2>Agenda</StyledH2>
       <StyledTable>
         <thead>
@@ -182,7 +186,7 @@ const Schedule = () => {
           ))}
         </tbody>
       </StyledTable>
-    </Section>
+    </Container>
   )
 }
 

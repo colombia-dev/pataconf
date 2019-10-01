@@ -6,6 +6,7 @@ import { Section } from "./Section"
 
 
 const AddressSection = styled(Section)`
+  padding: 7em 0;
   @media (max-width: 950px) {
     font-size: 0.8em;
   }

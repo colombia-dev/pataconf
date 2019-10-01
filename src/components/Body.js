@@ -7,6 +7,7 @@ import { Section } from "./Section"
 const About = styled(Section)`
   display: flex;
   justify-content: space-around;
+  padding: 7em 0;
   @media (max-width: 1000px) {
     flex-direction: column;
     font-size: 0.8em;
@@ -18,7 +19,7 @@ const StyledDivBody = styled.div`
   padding: 0 75px;
 `
 
-const StyledDivBodyDate = styled.div`    
+const StyledDivBodyDate = styled.div`
   flex-grow: 1;
   padding: 0 75px 0 0;
   @media (max-width: 1000px) {

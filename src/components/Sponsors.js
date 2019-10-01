@@ -5,6 +5,9 @@ import Img from "gatsby-image"
 import { Lead } from "./Lead"
 import { Section } from "./Section"
 
+const Container = styled(Section)`
+  padding: 7em 0;
+`
 const StyledDivApoya = styled.div`
   text-align: center;
   padding: 0 15px;
@@ -67,7 +70,7 @@ const Sponsors = () => {
   const { sponsorshipLevels, codeOfConductOrganization, codeOfConductURL } = sponsorsData.dataJson
   const sponsors = sponsorsData.allSponsorsDataJson.edges.map(e => e.node)
   return (
-    <Section>
+    <Container>
       <StyledDivApoya>
         <h2>Apoyan</h2>
         <Lead>
@@ -98,7 +101,7 @@ const Sponsors = () => {
           </SponsorList>
         </SponsorLevel>
       ))}
-    </Section>
+    </Container>
   )
 }
 

@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const Section = styled.section`
-  padding-top: 7.42857143em;
-  padding-bottom: 7.42857143em;
+  position: relative;
   ${({ secondary, bgImage }) =>
     secondary
       ? "background-color: #fafafa;"
@@ -11,7 +10,7 @@ export const Section = styled.section`
       : "border-top: 1px solid #ebebeb;"}
 
   ${({ bgImage }) => bgImage ? `\
-    background-image: url(\"${bgImage}\");\
+    // background-image: url(\"${bgImage}\");\
     background-size: cover;\
     width: 100vw;\
     height: 100vh;\

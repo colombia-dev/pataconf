@@ -22,9 +22,11 @@
 
   "conferenceSiteName": "Ruta N",
   "conferenceSiteAddress": "Calle 67 #52—20",
-  "conferenceSiteMapURL": "http://i.imgur.com/deF3yCm.jpg",
+  "conferenceSiteMapURL": "https://dilus80mxgle9.cloudfront.net/items/07310S3h1X3P141c1J0v/Screen%20Shot%202019-09-30%20at%208.49.34%20PM.png",
   "conferenceCity": "Medellín",
   "conferenceCountry": "Colombia",
+  "conferenceHowToGetLabel": "¿Cómo llegar a Ruta N?",
+  "conferenceHowToGetLink": "https://goo.gl/maps/GfZ3ZkQP75vyQdis7",
   "conferenceTicketsURL": "https://ti.to/colombia-dev/pataconf-2019",
   "conferenceCFPURL": "http://google.com",
   "codeOfConductOrganization": "Colombia.dev",

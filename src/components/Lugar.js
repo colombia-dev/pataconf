@@ -60,6 +60,8 @@ const Lugar = () => {
         conferenceCity
         conferenceCountry
         conferenceSiteMapURL
+        conferenceHowToGetLabel
+        conferenceHowToGetLink
       }
     }
   `)
@@ -70,6 +72,8 @@ const Lugar = () => {
     conferenceCity,
     conferenceCountry,
     conferenceSiteMapURL,
+    conferenceHowToGetLabel,
+    conferenceHowToGetLink,
   } = data.dataJson
   return (
     <AddressSection secondary id="lugar">
@@ -89,6 +93,9 @@ const Lugar = () => {
             <br />
             {conferenceSiteAddress}
           </h4>
+          <a href={conferenceHowToGetLink} target="_blank" rel="noopener noreferrer">
+            {conferenceHowToGetLabel}
+          </a>
         </Address>
       </LocationDetail>
     </AddressSection>

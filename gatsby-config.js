@@ -22,6 +22,19 @@ module.exports = {
         path: `${__dirname}/src/img/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Pataconf Colombia`,
+        short_name: `pataconf`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/img/pataconf.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,

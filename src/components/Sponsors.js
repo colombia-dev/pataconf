@@ -50,7 +50,9 @@ const Sponsors = () => {
       allSponsorsDataJson {
         edges {
           node {
+            name
             level
+            url
             image {
               name
               src {
@@ -75,7 +77,7 @@ const Sponsors = () => {
         <h2>Apoyan</h2>
         <Lead>
           Adoptamos el código de conducta de{" "}
-          <a href={codeOfConductURL}>
+          <a href={codeOfConductURL} target="_blank" rel="noopener noreferrer">
             {codeOfConductOrganization}
           </a>
         </Lead>
@@ -90,13 +92,16 @@ const Sponsors = () => {
           <SponsorList key={level}>
             {sponsors
               .filter(sponsor => sponsor.level === level)
-              .map(({ image }) => (
+              .map(({ image, url, name }) => (
+                <a href={url} title={name} target="_blank" rel="noopener noreferrer" >
                 <SponsorImage>
                   <Img
-                    key={image.name}
+                    key={name}
                     fixed={image.src.childImageSharp.fixed}
+                    alt={image.name}
                   />
                 </SponsorImage>
+                </a>
               ))}
           </SponsorList>
         </SponsorLevel>

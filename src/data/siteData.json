@@ -2,7 +2,7 @@
   "conferenceName": "Pataconf Colombia",
   "conferenceDescription": "El festival de programación donde las comunidades son bienvenidas a dar una charla.",
   "conferenceSiteURL": "https://pataconf.com",
-  "scheduleIsLive": true,
+  "scheduleIsLive": false,
   "callForProposalIsOpen": false,
   "ticketSaleIsOpen": true,
   "conferenceDates": [
@@ -25,10 +25,10 @@
   "conferenceSiteMapURL": "http://i.imgur.com/deF3yCm.jpg",
   "conferenceCity": "Medellín",
   "conferenceCountry": "Colombia",
-  "conferenceTicketsURL": "http://google.com",
+  "conferenceTicketsURL": "https://ti.to/colombia-dev/pataconf-2019",
   "conferenceCFPURL": "http://google.com",
   "codeOfConductOrganization": "Colombia.dev",
-  "codeOfConductURL": "http://xxxxx",
+  "codeOfConductURL": "https://github.com/colombia-dev/codigo-de-conducta",
   "sponsorshipLevels": [
     "Gold"
   ],

@@ -6,7 +6,8 @@
       "name": "coldev",
       "src":  "../img/coldev.png"
     },
-    "level": "Gold"
+    "level": "Gold",
+    "url": "https://colombia-dev.org"
   },
   {
     "name": "Ruta N",
@@ -15,7 +16,18 @@
       "name": "RutaN",
       "src":  "../img/rutaNlogo.png"
     },
-    "level": "Gold"
+    "level": "Gold",
+    "url": "https://www.rutanmedellin.org/es/"
+  },
+  {
+    "name": "Happy the App",
+    "image":
+    {
+      "name": "Happy",
+      "src":  "../img/happy.png"
+    },
+    "level": "Gold",
+    "url": "https://happythemovement.com"
   }
 
 ]

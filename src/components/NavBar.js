@@ -250,8 +250,8 @@ const NavBar = () => {
           <ExtendedNavLink href="#lugar">Lugar</ExtendedNavLink>
         </ExtendedNavLinks>
         <ExtendedCallToActions>
-          {ticketSaleIsOpen && <ExtendedCallToAction target="_blank" href={conferenceTicketsURL}>Reclama tu Entrada</ExtendedCallToAction>}
-          {callForProposalIsOpen && <ExtendedCallToAction target="_blank" href={conferenceCFPURL}>Envía tu Charla</ExtendedCallToAction>}
+          {ticketSaleIsOpen && <ExtendedCallToAction target="_blank" href={conferenceTicketsURL} rel="noopener noreferrer">Reclama tu Entrada</ExtendedCallToAction>}
+          {callForProposalIsOpen && <ExtendedCallToAction target="_blank" href={conferenceCFPURL} rel="noopener noreferrer">Envía tu Charla</ExtendedCallToAction>}
         </ExtendedCallToActions>
     </ExtendedMenu>
 
@@ -269,13 +269,13 @@ const NavBar = () => {
             <a href="#lugar"><HamburgerMenuItem>Lugar</HamburgerMenuItem></a>
             {
               ticketSaleIsOpen &&
-              <a target="_blank" href={conferenceTicketsURL}>
+              <a target="_blank" href={conferenceTicketsURL} rel="noopener noreferrer">
                 <HamburgerCallToAction className="first">Reclama tu Entrada</HamburgerCallToAction>
               </a>
             }
             {
               callForProposalIsOpen &&
-              <a target="_blank" href={conferenceCFPURL}>
+              <a target="_blank" href={conferenceCFPURL} rel="noopener noreferrer">
                 <HamburgerCallToAction>Envía tu Charla</HamburgerCallToAction>
               </a>
             }

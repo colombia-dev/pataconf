@@ -14,13 +14,14 @@ const HeroSection = styled(Section)`
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: calc(100vh - 14em);
+  min-height: calc(100vh - 14em);
 `
 const ParticlesContainer = styled('div')`
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   top: 0;
+  z-index: 1;
   background: rgba(58, 45, 253, 0.61);
   div, canvas {
     height: 100vh;
@@ -28,20 +29,16 @@ const ParticlesContainer = styled('div')`
 `
 
 const HeroInfo = styled.div`
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -40%);
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   margin: 0 5vw;
-  width: 75vw;
+  width: 90vw;
+  z-index: 2;
   @media (max-width: 550px) {
-    top: 40%;
     flex-direction: column;
     align-items: center;
     font-size: 0.8em;
-    transform: translate(-54%, -40%);
   }
 `
 const ConfInfo = styled.div`
@@ -122,15 +119,15 @@ const HeroBanner = () => {
 
   return (
     <HeroSection bgImage={"conference.png"}>
-      <ParticlesContainer>
-        <Particles params={ PARTICLES_PARAMS } />
-      </ParticlesContainer>
       <HeroInfo>
         <ConfLogo>
           <Img src="pataconf.png" />
         </ConfLogo>
         <ConfInfo>{getHeroBannerData(data)}</ConfInfo>
       </HeroInfo>
+      <ParticlesContainer>
+        <Particles params={ PARTICLES_PARAMS } />
+      </ParticlesContainer>
     </HeroSection>
   )
 }

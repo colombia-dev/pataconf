@@ -26,6 +26,9 @@ const GlobalStyle = createGlobalStyle`
     font-variant-ligatures: common-ligatures;
     margin-top: 0;
     margin-bottom: 0;
+    @media (max-width: 400px) {
+      font-size: 0.8em;
+    }
   }
   
   h1 {
@@ -58,6 +61,12 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5em;
+  }
+  
+  body {
+    @media (max-width: 400px) {
+      font-size: 0.7em;
+    }
   }
 `
 

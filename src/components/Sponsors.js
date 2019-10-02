@@ -83,8 +83,8 @@ const Sponsors = () => {
         </Lead>
       </StyledDivApoya>
 
-      {sponsorshipLevels.map(level => (
-        <SponsorLevel>
+      {sponsorshipLevels.map((level, idx) => (
+        <SponsorLevel key={idx}>
           {sponsorshipLevels.length > 1 ?
             <h3>{level}</h3>
             : null
@@ -92,15 +92,21 @@ const Sponsors = () => {
           <SponsorList key={level}>
             {sponsors
               .filter(sponsor => sponsor.level === level)
-              .map(({ image, url, name }) => (
-                <a href={url} title={name} target="_blank" rel="noopener noreferrer" >
-                <SponsorImage>
-                  <Img
-                    key={name}
-                    fixed={image.src.childImageSharp.fixed}
-                    alt={image.name}
-                  />
-                </SponsorImage>
+              .map(({ image, url, name }, idx) => (
+                <a
+                  href={url}
+                  title={name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={idx}
+                >
+                  <SponsorImage>
+                    <Img
+                      key={name}
+                      fixed={image.src.childImageSharp.fixed}
+                      alt={image.name}
+                    />
+                  </SponsorImage>
                 </a>
               ))}
           </SponsorList>

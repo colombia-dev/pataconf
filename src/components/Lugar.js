@@ -31,11 +31,8 @@ const Map = styled.img`
   max-width: 500px;
   max-height: 500px;
   object-fit: contain;
-  padding-left: 45px;
-  padding-right: 15px;
   @media (max-width: 560px) {
     width: 90%;
-    padding-right: 45px;
   }
 `
 

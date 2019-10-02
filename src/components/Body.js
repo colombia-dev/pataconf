@@ -60,15 +60,15 @@ const Body = () => {
     <About id="about">
       <StyledDivBody>
         <h2>{conferenceSiteBody.title}</h2>
-        {conferenceSiteBody.paragraph.map(p => (
-          <Lead>{p}</Lead>
+        {conferenceSiteBody.paragraph.map((p, idx) => (
+          <Lead key={idx}>{p}</Lead>
         ))}
       </StyledDivBody>
 
         <StyledDivBodyDate>
           <h4>Fecha:</h4>
-          {conferenceDates.map(({ date, start, end }) => (
-            <h5>{date} desde las {start} hasta las {end}</h5>
+          {conferenceDates.map(({ date, start, end }, idx) => (
+            <h5 key={idx}>{date} desde las {start} hasta las {end}</h5>
           ))}
 
           <h4>Lugar:</h4>

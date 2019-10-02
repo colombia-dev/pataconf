@@ -37,9 +37,11 @@ const HeroInfo = styled.div`
   margin: 0 5vw;
   width: 75vw;
   @media (max-width: 550px) {
+    top: 40%;
     flex-direction: column;
     align-items: center;
     font-size: 0.8em;
+    transform: translate(-54%, -40%);
   }
 `
 const ConfInfo = styled.div`
@@ -51,7 +53,7 @@ const ConfLogo = styled.div`
 `
 const Img = styled.img`
   width: 25vw;
-    @media (max-width: 550px) {
+  @media (max-width: 550px) {
     width: 80vw;
     height: 83.02vw;
   }
@@ -62,6 +64,9 @@ const BannerTitle = styled.h1`
   font-style: normal;
   font-weight: 700;
   margin: 0 0 26px;
+  @media (max-width: 550px) {
+    font-size: 30px;
+  }
 `
 
 const BannerLead = styled(Lead)`

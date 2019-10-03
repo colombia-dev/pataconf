@@ -7,12 +7,15 @@ const NavContainer = styled.div`
   padding: 1.85714286em 0;
   z-index: 99;
   width: 100%;
+  display: flex;
+  justify-content: center;
 `
 const ExtendedMenu = styled.div`
-    width: 85vw;
-    margin: 0 5vw;
+    width: 90%;
+    max-width: 1280px;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
     @media (max-width: 750px) {
       display: none;
     }
@@ -33,10 +36,14 @@ const ExtendedCallToActions = styled.div`
 `
 const ExtendedLogo = styled.div`
   position: absolute;
-  margin: 0 44.5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
   @media (max-width: 1010px) {
     display: none;
   }
+
 `
 const StyledImg = styled.img`
   max-height: 1.85714286em;
@@ -52,6 +59,10 @@ const ExtendedNavLink = styled.a`
   text-decoration: none;
   :hover {
     color: white; 
+  }
+  
+  :last-child {
+    margin-right: 0;
   }
 `
 const ExtendedCallToAction= styled.a`
@@ -73,6 +84,9 @@ const ExtendedCallToAction= styled.a`
     color: gray; 
     border-color: gray;
     background-color: #fef042;
+  }
+  :last-child {
+    margin-right: 0;
   }
 `
 const HamburgerMenu = styled.div`

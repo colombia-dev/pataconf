@@ -2,7 +2,7 @@
   "conferenceName": "Pataconf Colombia",
   "conferenceDescription": "El festival de programación donde las comunidades son bienvenidas a dar una charla.",
   "conferenceSiteURL": "https://pataconf.com",
-  "scheduleIsLive": false,
+  "scheduleIsLive": true,
   "callForProposalIsOpen": false,
   "ticketSaleIsOpen": true,
   "conferenceDates": [

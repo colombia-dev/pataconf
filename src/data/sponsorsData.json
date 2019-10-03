@@ -28,6 +28,16 @@
     },
     "level": "Gold",
     "url": "https://happythemovement.com"
+  },
+  {
+    "name": "Endava",
+    "image":
+    {
+      "name": "Endava",
+      "src":  "../img/endava.png"
+    },
+    "level": "Gold",
+    "url": "https://www.endava.com"
   }
 
 ]

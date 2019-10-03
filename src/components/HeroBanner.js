@@ -15,12 +15,15 @@ const HeroSection = styled(Section)`
   background-position: center center;
   background-repeat: no-repeat;
   min-height: calc(100vh - 14em);
+  display: flex;
+  align-items: center;
 `
 const ParticlesContainer = styled('div')`
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 1;
   background: rgba(58, 45, 253, 0.61);
   div, canvas {
@@ -32,8 +35,9 @@ const HeroInfo = styled.div`
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  margin: 0 5vw;
-  width: 90vw;
+  align-items: center;
+  margin: 0 5%;
+  width: 90%;
   z-index: 2;
   @media (max-width: 550px) {
     flex-direction: column;

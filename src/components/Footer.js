@@ -6,10 +6,16 @@ import Img from "gatsby-image"
 const StyledFooter = styled.footer`
   background: #58220f;
   height: 180.66px;
-  display: flex;
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
   font-size: 0.85714286em;
+`
+
+const FooterContainer = styled.div`
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
   justify-content: space-between;
 `
 
@@ -57,11 +63,13 @@ const Footer = () => {
   const { copyright, social, copyrightImage } = data.dataJson
   return (
     <StyledFooter>
-      <Copyright>
-        <CopyrightImage fixed={copyrightImage.src.childImageSharp.fixed} />
-        <CopyrightHolder> © {copyright}</CopyrightHolder>
-      </Copyright>
-      <CopyrightTwitter>{social.twitter}</CopyrightTwitter>
+      <FooterContainer>
+        <Copyright>
+          <CopyrightImage fixed={copyrightImage.src.childImageSharp.fixed} />
+          <CopyrightHolder> © {copyright}</CopyrightHolder>
+        </Copyright>
+        <CopyrightTwitter>{social.twitter}</CopyrightTwitter>
+      </FooterContainer>
     </StyledFooter>
   )
 }

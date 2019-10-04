@@ -7,12 +7,7 @@
         "title": "[Workshop] Git Azanzado",
         "description": "Vamos a aprender a usar git rebase, git rebase interactive y git bisect para resolver problemas cotidianos como correcciones a los commits o no perder código haciendo merges sin respetar la línea de tiempo de los desarrollos que están en las ramas principales antes que los nuestros",
         "track": 1,
-        "time": "09:00:00"
-      },
-      {
-        "title": "[Workshop] Git Azanzado",
-        "description": "Vamos a aprender a usar git rebase, git rebase interactive y git bisect para resolver problemas cotidianos como correcciones a los commits o no perder código haciendo merges sin respetar la línea de tiempo de los desarrollos que están en las ramas principales antes que los nuestros",
-        "track": 2,
+        "multiTracks": 2,
         "time": "09:00:00"
       }
     ]

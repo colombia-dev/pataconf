@@ -1,74 +1,213 @@
 [
   {
-    "name": "Kevin Kraus",
-    "twitter": "@gabynr",
+    "name": "Camilo Montoya",
+    "twitter": "@camilomontoyau",
     "talks": [
       {
-        "title": "Usabilidad contextual",
-        "description": "Emprender, ser ágiles, ganar mercado, iterar! La importancia de pensar productos según el contexto de uso hará que sean productos innovadores, de gran adopción o chatarra tecnológica. Basado en experiencias personales la charla es sobre Usabilidad contextual, un término que yo mismo inventé. ",
+        "title": "[Workshop] Git Azanzado",
+        "description": "Vamos a aprender a usar git rebase, git rebase interactive y git bisect para resolver problemas cotidianos como correcciones a los commits o no perder código haciendo merges sin respetar la línea de tiempo de los desarrollos que están en las ramas principales antes que los nuestros",
         "track": 1,
-        "time": "11:00:00"
-      }
-    ]
-  },
-  {
-    "name": "Álvaro José Agámez Licha",
-    "twitter": "@elyalvarado",
-    "talks": [
+        "time": "09:00:00"
+      },
       {
-        "title": "Desarrollo Web en Windows",
-        "description": "Desarrollar proyectos web en Windows no siempre ha sido bien visto por muchos devs, a veces por desconocimiento del SO en sí; mi objetivo es desmitificar este concepto y mostrar cómo ha cambiado este tema en los últimos años, mostrando las herramientas necesarias para hacerlo de la mejor manera.",
+        "title": "[Workshop] Git Azanzado",
+        "description": "Vamos a aprender a usar git rebase, git rebase interactive y git bisect para resolver problemas cotidianos como correcciones a los commits o no perder código haciendo merges sin respetar la línea de tiempo de los desarrollos que están en las ramas principales antes que los nuestros",
         "track": 2,
-        "time": "11:00:00"
+        "time": "09:00:00"
       }
     ]
   },
 
   {
-    "name": "Carlos Galarza",
-    "twitter": "@gabynr",
+    "name": "Sorey Garcia",
+    "twitter": "@soreygarcia",
     "talks": [
       {
-        "title": "Simplificando UIs con maquinas de estados",
-        "description": "Que hace de a las UIs tan complejas? Como podemos simplificarlas? Para responder a esta pregunta me trasladare 30 años atrás a un paper escrito por David Harel cuando trabajaba para la fuerza aérea israelí en el cual crea una extensión de las maquinas de estado y las llama Statecharts.  ",
+        "title": "Lilypad: IoT for inspiration",
+        "description": "En esta charla quisiera compartir los proyectos de IoT que viene trabajando la comunidad Avanet para inspirar a las nuevas generaciones, mostrando algunos demos basicos que desde lo simple y lo cotidiano, pueden crear en ellos el deseo de convertirse en creadores de tecnología.",
+        "track": 1,
+        "time": "10:10:00"
+      }
+    ]
+  },
+  {
+    "name": "Jhon Freddy Puentes Núñez",
+    "twitter": "@jfreddypuentes",
+    "talks": [
+      {
+        "title": "Machine Learning Para Todos",
+        "description": "El Aprendizaje Automático se ha convertido en un area casi onmipresente en nuestras vidas. Está en el video juegos, en los mapas que usamos, en las recomendaciones que nos hace Youtube o Netflix. Pero, Cómo podemos hacer todo esto? Cómo puedo crear mi propia predicció?. Llegó la hora de aprenderlo!!",
+        "track": 2,
+        "time": "10:10:00"
+      }
+    ]
+  },
+  {
+    "name": "Carlos Eduardo Acevedo Duque",
+    "twitter": "@AcevedoAc",
+    "talks": [
+      {
+        "title": "Acelerando la adopción DevOps usando 'Jenkins Templates'",
+        "description": "Jenkins Templates es una alternativa con la que podremos acelerar la construcción de los workflows de IC, DC y EC, facilitando la estandarización y mantenimiento; permitiendo que tengas Pipelines as Code sin tener que entrenar a todas las personas en la nueva sintaxis.",
+        "track": 1,
+        "time": "10:50:00"
+      }
+    ]
+  },
+  {
+    "name": "Douglas Urrea Ocampo",
+    "twitter": "@douglasfugazi",
+    "talks": [
+      {
+        "title": "Moving from Manual to Automated Tests with Cypress",
+        "description": "La automatización de pruebas plantea sus propios desafíos diferentes de las pruebas manuales. No importa si eres un tester manual, las pruebas automatizadas con Cypress es una excelente manera de apoyar fácilmente las pruebas end-to-end en un equipo multifuncional.",
+        "track": 2,
+        "time": "10:50:00"
+      }
+    ]
+  },
+  {
+    "name": "Raúl Andrés Alzate Gómez",
+    "twitter": "@2a_raul",
+    "talks": [
+      {
+        "title": "Conozcamos los principios de arquitectura",
+        "description": "Como arquitecto, puede inspeccionar, quejarse y desarmar el diseño fácilmente. Sin embargo, si no tiene cuidado, puede dejar al equipo desconcertado y sin saber qué es lo correcto. Teniendo una lista de principios, los arquitectos dan su opinión conducido a los principios.",
         "track": 1,
         "time": "11:30:00"
       }
     ]
   },
   {
-    "name": "Alejandro Estrada",
-    "twitter": "@elyalvarado",
+    "name": "María Dorancy Pemberthy",
+    "twitter": "@MariaDPemberthy",
     "talks": [
       {
-        "title": "Como pase de ser un ingeniero administrador a convertirme en un desarrollador tiempo completo",
-        "description": "En esta charla les contare como pase de trabajar como analista financiero a convertirme en un desarrollador backend tiempo completo, donde en el primer año como desarollador he contribuido a algunos proyectos OSS y he creado algunos otros, hasta el punto de dar mi primera charla en JSConf Col 2018.",
+        "title": "Cómo gestionar mejor el tiempo",
+        "description": "Definir prioridades entre la cantidad de tareas y labores personales, identificar fugaz de tiempo y como a través de pequeños hábitos se puede crear una disciplina más efectiva entorno a nuestras actividades.",
         "track": 2,
         "time": "11:30:00"
       }
     ]
   },
   {
-    "name": "Carlos Galarza",
-    "twitter": "@gabynr",
+    "name": "Raúl Andrés Alzate Gómez",
+    "twitter": "@2a_raul",
     "talks": [
       {
-        "title": "Simplificando UIs con maquinas de estados",
-        "description": "Que hace de a las UIs tan complejas? Como podemos simplificarlas? Para responder a esta pregunta me trasladare 30 años atrás a un paper escrito por David Harel cuando trabajaba para la fuerza aérea israelí en el cual crea una extensión de las maquinas de estado y las llama Statecharts.",
+        "title": "Conozcamos los principios de arquitectura",
+        "description": "Como arquitecto, puede inspeccionar, quejarse y desarmar el diseño fácilmente. Sin embargo, si no tiene cuidado, puede dejar al equipo desconcertado y sin saber qué es lo correcto. Teniendo una lista de principios, los arquitectos dan su opinión conducido a los principios.",
+        "track": 1,
+        "time": "10:10:00"
+      }
+    ]
+  },
+  {
+    "name": "Maria Dorancy",
+    "twitter": "@MariaDPemberthy",
+    "talks": [
+      {
+        "title": "Cómo gestionar mejor el tiempo",
+        "description": "Definir prioridades entre la cantidad de tareas y labores personales, identificar fugaz de tiempo y como a través de pequeños hábitos se puede crear una disciplina más efectiva entorno a nuestras actividades.",
+        "track": 2,
+        "time": "10:10:00"
+      }
+    ]
+  },
+
+  {
+    "name": "Julian Lamprea",
+    "twitter": "@jalamprea",
+    "talks": [
+      {
+        "title": "Optimización frontend efectiva",
+        "description": "Vamos a hablar acerca de cómo medir realmente el tiempo de carga tus sitios/apps web (TTFB FCP, FIT). Aprenderemos como utilizar técnicas de mejora de tiempos de carga, tales como critical-css, imágenes webp responsive, lazy-load, http2 push y algunas recomendaciones de CDN.",
+        "track": 1,
+        "time": "13:00:00"
+      }
+    ]
+  },
+  {
+    "name": "Miguel Teheran",
+    "twitter": "@Mteheran",
+    "talks": [
+      {
+        "title": "Microfront-end que es y como implementarlo",
+        "description": "Micro-frontend que es? como se usa? se relaciona con microservicios?. Analizaremos este tipo de arquitectura que cada vez cobra mas fuerza y el por que utilizarla en diferentes contextos o tipos de proyectos así como también la importancia que tiene en la migración de productos legacy.",
+        "track": 2,
+        "time": "13:00:00"
+      }
+    ]
+  },
+  {
+    "name": "Kelly Hécate Villa",
+    "twitter": "@02_KellyV",
+    "talks": [
+      {
+        "title": "Seguridad IoT: Vulnerabilidades en dispositivos inteligentes para el hogar",
+        "description": "Actualmente la necesidad de tele-operación en los hogares ha generado un crecimiento global de tecnologías IoT. Un porcentaje considerable de estos dispositivos se generan con media, poca o baja gestión de seguridad informática minimizando así la protección de datos del usuario final.",
+        "track": 1,
+        "time": "13:30:00"
+      }
+    ]
+  },
+  {
+    "name": "Alejandro Agudelo",
+    "twitter": "",
+    "talks": [
+      {
+        "title": "Discovering swift package manager",
+        "description": "Any serious swift project should use a dependency manager. An interesting option is swift package manager that comes integrated in Xcode 11 and helps developers to create maintainable apps. Sounds like a lot? Not really, in just 25 minutes I will give you all you need to get started with it!.",
+        "track": 2,
+        "time": "13:30:00"
+      }
+    ]
+  },
+  {
+    "name": "Carlos Daniel Sanchez",
+    "twitter": "@EruJazz",
+    "talks": [
+      {
+        "title": "Programación Funcional en el Sistema de Gestión de la Malla Vial de Medellín",
+        "description": "Conocerás de primera mano cómo durante la actualización del SGVial realizada en 2018, integramos Vavr (una librería de FP para Java) en Play Framework, usando además ReactJS y Docker, para impactar positivamente a los funcionarios públicos en su día a día brindándoles un sistema muy robusto.",
         "track": 1,
         "time": "14:00:00"
       }
     ]
   },
   {
-    "name": "Diego Botia",
-    "twitter": "@gynr",
+    "name": "Oscar Andres Granada Baquro",
+    "twitter": "@ogranada",
     "talks": [
       {
-        "title": "Serverless desde cero",
-        "description": "En esta charla se dará una introducción general a las Arquitecturas Serverless presentando la plataforma agnóstica Fn Project que facilita crear funciones como servicio de una manera ágil y fácil sin importar el lenguaje o plataforma de desarrollo. Se presentará ademas su integración con Docker.",
+        "title": "Rust para quienes usan lenguajes de alto nivel",
+        "description": "Aceptémoslo, el mundo está cambiando, y aunque muchos siguen con ganas de saber más de JavaScript, Python y otros lenguajes de alto nivel hay algo que dice, no olvides qué hay bases como el clásico lenguaje C++. Esta charla es una guía de inicio para Rust, mostrando por que es el nuevo C++.",
         "track": 2,
-        "time": "13:30:00"
+        "time": "14:00:00"
+      }
+    ]
+  },
+  {
+    "name": "Jose Gaviria",
+    "twitter": "",
+    "talks": [
+      {
+        "title": "Blockchain, Rutanio y la Tokeneconomia",
+        "description": "En esta charla exploraremos los principios de Blockchain y la Tokeneconomía. Además ilustraremos con el caso de Rutanio, primer proyecto blockchain de opensource que define una Economía Mínima Viable para la ciudad de Medellín y las oportunidades que genera para desarrolladores, emprendedores y público general.",
+        "track": 1,
+        "time": "14:30:00"
+      }
+    ]
+  },
+  {
+    "name": "",
+    "twitter": "",
+    "talks": [
+      {
+        "title": "TBA",
+        "description": "",
+        "track": 2,
+        "time": "14:30:00"
       }
     ]
   }

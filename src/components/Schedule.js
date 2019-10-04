@@ -96,6 +96,7 @@ const Schedule = () => {
               time
               title
               track
+              multiTracks
             }
             twitter
           }
@@ -148,7 +149,7 @@ const Schedule = () => {
   const talkForTrackAndTime = (track, time) => {
     const talk = allTalks.find(t => t.time === time && t.track === track)
     return talk ? (
-      <TdTrack>
+      <TdTrack {...(talk.multiTracks ? {colSpan: talk.multiTracks} : {})}>
         <h5>{talk.title}</h5>
         <TalkDescription>{talk.description}</TalkDescription>
         <span>

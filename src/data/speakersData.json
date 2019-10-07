@@ -111,12 +111,12 @@
   },
 
   {
-    "name": "Julian Lamprea",
-    "twitter": "@jalamprea",
+    "name": "Hillmer Ch.",
+    "twitter": "@HillmerCh",
     "talks": [
       {
-        "title": "Optimización frontend efectiva",
-        "description": "Vamos a hablar acerca de cómo medir realmente el tiempo de carga tus sitios/apps web (TTFB FCP, FIT). Aprenderemos como utilizar técnicas de mejora de tiempos de carga, tales como critical-css, imágenes webp responsive, lazy-load, http2 push y algunas recomendaciones de CDN.",
+        "title": "Cómo fracasar como desarrollador de software sin morir en el intento. Alerta de Troll.",
+        "description": "Un Troll con sus no-consejos nos quiere mostrar que hacer (o no hacer) si queremos fracasar en el desarrollo de software. En esta sesión revisaremos sus planteamientos para darle una vuelta a su discurso y poder aprovecharlo para seguir creciendo como desarrolladores.",
         "track": 1,
         "time": "13:00:00"
       }

@@ -38,6 +38,16 @@
     },
     "level": "Gold",
     "url": "https://www.endava.com"
+  },
+  {
+    "name": "Avanet",
+    "image":
+    {
+      "name": "Avanet",
+      "src":  "../img/avanet.png"
+    },
+    "level": "Gold",
+    "url": "https://www.avanet.org"
   }
 
 ]

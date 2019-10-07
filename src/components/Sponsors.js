@@ -30,7 +30,9 @@ const SponsorList = styled.div`
     padding-bottom: 0;
   }
 `
-
+const Anchor = styled.a`
+  align-self: center;
+`
 const SponsorImage = styled.div`
   display: inline-flex;
   vertical-align: middle;
@@ -93,7 +95,7 @@ const Sponsors = () => {
             {sponsors
               .filter(sponsor => sponsor.level === level)
               .map(({ image, url, name }, idx) => (
-                <a
+                <Anchor
                   href={url}
                   title={name}
                   target="_blank"
@@ -107,7 +109,7 @@ const Sponsors = () => {
                       alt={image.name}
                     />
                   </SponsorImage>
-                </a>
+                </Anchor>
               ))}
           </SponsorList>
         </SponsorLevel>

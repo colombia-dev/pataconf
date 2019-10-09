@@ -22,7 +22,7 @@ const StyledDivBody = styled.div`
 const StyledDivBodyDate = styled.div`
   flex-grow: 1;
   padding: 0 75px 0 0;
-  @media (max-width: 1000px) {
+  @media (max-width: 2600px) {
     padding: 75px 75px 0;
   }
 `

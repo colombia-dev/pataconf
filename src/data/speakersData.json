@@ -152,7 +152,7 @@
     "talks": [
       {
         "title": "Discovering swift package manager",
-        "description": "Any serious swift project should use a dependency manager. An interesting option is swift package manager that comes integrated in Xcode 11 and helps developers to create maintainable apps. Sounds like a lot? Not really, in just 25 minutes I will give you all you need to get started with it!.",
+        "description": "Cualquier proyecto serio en swift debería usar un gestor de dependencias. Una opción bastante interesante es swift package manager que viene integrado en Xcode 11 y ayuda a los desarrolladores a crear aplicaciones mantenible. ¿Mucha información? En realidad no, ¡en solo 25 minutos te daré todo lo que necesitas para comenzar!",
         "track": 2,
         "time": "13:30:00"
       }
@@ -184,7 +184,7 @@
   },
   {
     "name": "Jose Gaviria",
-    "twitter": "",
+    "twitter": "@jfgaviria",
     "talks": [
       {
         "title": "Blockchain, Rutanio y la Tokeneconomia",
@@ -195,12 +195,12 @@
     ]
   },
   {
-    "name": "",
-    "twitter": "",
+    "name": "Carlos Daniel Muñoz",
+    "twitter": "@cdmunozi",
     "talks": [
       {
-        "title": "TBA",
-        "description": "",
+        "title": "Cómo migrar efectivamente a Kotlin una app Android",
+        "description": "Recursos acerca de cómo empezar a trabajar con Kotlin hoy día, hay muchos: videos, tutoriales, blogs, codelabs, etc. Así, para aprender Kotlin como lenguaje nunca faltarán fuentes de información para entender el lenguaje y sus poderes. Pero al momento de pararse frente a un proyecto que tiene un codebase en otro lenguaje y empezar a migrarlo o integrarlo a Kotlin, no es tan simple, pues contextualizar el poder de Kotlin y aplicarlo efectivamente requiere de práctica para poder escribir adecuadamente el código",
         "track": 2,
         "time": "14:30:00"
       }
